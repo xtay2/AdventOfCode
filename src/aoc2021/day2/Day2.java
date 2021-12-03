@@ -17,7 +17,6 @@ public class Day2 {
 			switch (line.split(" ")[0]) {
 			case "forward":
 				horizontal += val;
-				;
 				break;
 			case "down":
 				depth += val;
