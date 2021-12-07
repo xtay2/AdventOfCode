@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import static java.lang.Math.*;
 
 public class Day7 {
 
@@ -13,50 +12,39 @@ public class Day7 {
 
 	public static void main(String[] args) throws IOException {
 		ArrayList<String> lines = new ArrayList<>(Files.readAllLines(Paths.get("input")));
-		System.out.println("Task 1: " + task1(lines));
-		System.out.println("Task 2: " + task2(lines));
+		System.out.println("Task 1: " + task1(lines.get(0).split(",")));
+		System.out.println("Task 2: " + task2(lines.get(0).split(",")));
 	}
 
-	static long task1(ArrayList<String> input) {
-		n = input.size();
-		for (int i = 0; i < n; i++) {
-			String e = input.get(i);
-
+	static long task1(String[] input) {
+		int smallestVal = Integer.MAX_VALUE;
+		for (long i = 0; i < 1000; i++) {
+			int sum = 0;
+			for (String e : input)
+				sum += Math.abs(i - txt2nr(e));
+			if (sum < smallestVal)
+				smallestVal = sum;
 		}
-		long cnt = 0;
-		return cnt;
+		return smallestVal;
 	}
 
-	static long task2(ArrayList<String> input) {
-		n = input.size();
-		for (int i = 0; i < n; i++) {
-			String e = input.get(i);
-
+	static int task2(String[] input) {
+		int smallestVal = Integer.MAX_VALUE;
+		for (int i = 0; i < 1000; i++) {
+			int sum = 0;
+			for (String e : input) {
+				int fuel = 0;
+				for (int j = 1; j <= Math.abs(i - txt2nr(e)); j++)
+					fuel += j;
+				sum += fuel;
+			}
+			if (sum < smallestVal)
+				smallestVal = sum;
 		}
-		long cnt = 0;
-		return cnt;
+		return smallestVal;
 	}
 
 	static int txt2nr(String s) {
 		return Integer.valueOf(s);
-	}
-
-	static int txt2nr(char s) {
-		return Integer.valueOf(s);
-	}
-
-	static int nthChar2nr(String s, int index) {
-		return txt2nr(s.charAt(index));
-	}
-
-	static int[] txt2intArr(String[] line) {
-		int[] res = new int[line.length];
-		for (int i = 0; i < line.length; i++)
-			res[i] = txt2nr(line[i]);
-		return res;
-	}
-
-	static double rnd(double val, int comma) {
-		return Math.round(val * Math.pow(10, comma)) / Math.pow(10, comma);
 	}
 }
