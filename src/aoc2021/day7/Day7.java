@@ -5,41 +5,37 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
+import static java.lang.Math.*;
+
 public class Day7 {
 
 	static int n;
-	static final int m = 0;
+	static final int m = 1000;
 
 	public static void main(String[] args) throws IOException {
 		ArrayList<String> lines = new ArrayList<>(Files.readAllLines(Paths.get("input")));
-		System.out.println("Task 1: " + task1(lines.get(0).split(",")));
-		System.out.println("Task 2: " + task2(lines.get(0).split(",")));
+		System.out.println("Linear fuel consumption: \t" + task1(lines.get(0).split(",")));
+		System.out.println("Exponential fuel consumption: \t" + task2(lines.get(0).split(",")));
 	}
 
 	static long task1(String[] input) {
 		int smallestVal = Integer.MAX_VALUE;
-		for (long i = 0; i < 1000; i++) {
+		for (long i = 0; i < m; i++) {
 			int sum = 0;
 			for (String e : input)
-				sum += Math.abs(i - txt2nr(e));
-			if (sum < smallestVal)
-				smallestVal = sum;
+				sum += abs(i - txt2nr(e));
+			smallestVal = min(smallestVal, sum);
 		}
 		return smallestVal;
 	}
 
 	static int task2(String[] input) {
 		int smallestVal = Integer.MAX_VALUE;
-		for (int i = 0; i < 1000; i++) {
+		for (int i = 0; i < m; i++) {
 			int sum = 0;
-			for (String e : input) {
-				int fuel = 0;
-				for (int j = 1; j <= Math.abs(i - txt2nr(e)); j++)
-					fuel += j;
-				sum += fuel;
-			}
-			if (sum < smallestVal)
-				smallestVal = sum;
+			for (String e : input)
+				sum += (abs(i - txt2nr(e)) + 1) * abs(i - txt2nr(e)) / 2;
+			smallestVal = min(smallestVal, sum);
 		}
 		return smallestVal;
 	}
