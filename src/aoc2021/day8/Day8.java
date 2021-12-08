@@ -149,4 +149,4 @@ class Pattern {
 		}
 		return true;
 	}
-}
+} 
