@@ -71,7 +71,7 @@ class Line {
 
 /**
  * <pre>
- * Sortiere jede Zeile nach Stringlänge und leite ein Muster aus den Indizes ab.
+ * Sortiere jede Zeile nach StringlÃ¤nge und leite ein Muster aus den Indizes ab.
  * index	digit	length
  *     0		1		 2
  *     1		7		 3
@@ -89,7 +89,7 @@ class Pattern {
 	public Pattern(ArrayList<String> s) {
 		this.entries = s;
 
-		// Sortiere nach Stringlänge
+		// Sortiere nach StringlÃ¤nge
 		entries.sort(Comparator.comparingInt(String::length));
 
 		map.put(entries.get(0), 1);
@@ -97,12 +97,12 @@ class Pattern {
 		map.put(entries.get(2), 4);
 		map.put(entries.get(9), 8);
 
-		// Index der 6 wird gespeichert, da er für die 5 gebraucht wird.
+		// Index der 6 wird gespeichert, da er fÃ¼r die 5 gebraucht wird.
 		int sixIndex = 0;
 
 		/**
 		 * <pre>
-		 * Überprüfe alle Werte mit Länge 6, ie: 0, 9 und 6
+		 * ÃœberprÃ¼fe alle Werte mit LÃ¤nge 6, ie: 0, 9 und 6
 		 * 
 		 * 9 besteht aus 1, 7 und 4 			  //Index 0, 1, 2
 		 * 0 besteht nur aus 1 und 7			  //Index 0, 1
@@ -122,7 +122,7 @@ class Pattern {
 		}
 
 		/**
-		 * Überprüfe die restlichen Werte: 3, 2 und 5
+		 * ÃœberprÃ¼fe die restlichen Werte: 3, 2 und 5
 		 * 
 		 * 3 besteht aus 1 und 7
 		 * 
