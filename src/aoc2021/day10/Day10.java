@@ -23,11 +23,11 @@ public class Day10 {
 	private static long findCorrupted(String line) {
 		stack = new Stack<>();
 		for (char letter : line.toCharArray()) {
-			int let = BR_NR.get(letter);
-			if (let < 4)
-				stack.push(let);
-			else if (stack.pop() != (let % 4))
-				return VALUES[let % 4];
+			int l = BR_NR.get(letter);
+			if (l < 4)
+				stack.push(l);
+			else if (stack.pop() != (l % 4))
+				return VALUES[l % 4];
 		}
 		return 0;
 	}

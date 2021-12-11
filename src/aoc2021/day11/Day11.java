@@ -1,62 +1,130 @@
 package aoc2021.day11;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import static java.lang.Math.*;
+import files.FileManager;
 
+/**
+ * Es ist ein wundeschöner Tag für unnötig viele verschachtelte for-Schleifen :)
+ */
 public class Day11 {
 
-	static int n;
-	static final int m = 0;
+	static int[][] octoAt;
+	static boolean[][] hasFlashed;
 
-	public static void main(String[] args) throws IOException {
-		ArrayList<String> lines = new ArrayList<>(Files.readAllLines(Paths.get("input")));
-		System.out.println("Task 1: " + task1(lines));
-		System.out.println("Task 2: " + task2(lines));
+	public static void main(String[] args) {
+		System.out.println("Sum on flashes: " + task1());
+		System.out.println("First sync on day: " + task2());
 	}
 
-	static long task1(ArrayList<String> input) {
-		n = input.size();
-		for (int i = 0; i < n; i++) {
-			String e = input.get(i);
+	static long flashes = 0;
 
+	static long task1() {
+		octoAt = buildMatrix(FileManager.fileToLineArray("input"));
+		hasFlashed = new boolean[octoAt.length][octoAt[0].length];
+		for (int i = 0; i < 100; i++)
+			simulateDay(i, false);
+		return flashes;
+	}
+
+	static int task2() {
+		octoAt = buildMatrix(FileManager.fileToLineArray("input"));
+		hasFlashed = new boolean[octoAt.length][octoAt[0].length];
+		for (int i = 0; i < Integer.MAX_VALUE; i++) {
+			if (simulateDay(i, true) != -1)
+				return i;
 		}
-		long cnt = 0;
-		return cnt;
+		throw new AssertionError("There was no synchronization.");
 	}
 
-	static long task2(ArrayList<String> input) {
-		n = input.size();
-		for (int i = 0; i < n; i++) {
-			String e = input.get(i);
-
+	static int simulateDay(int day, boolean checkForSynch) {
+		// Increment everything
+		for (int i = 0; i < octoAt.length; i++) {
+			for (int j = 0; j < octoAt[0].length; j++)
+				octoAt[i][j]++;
 		}
-		long cnt = 0;
-		return cnt;
+		// Initial flashes
+		for (int i = 0; i < octoAt.length; i++) {
+			for (int j = 0; j < octoAt[0].length; j++)
+				tryToFlash(i, j);
+		}
+
+		// Check if synced. (Task2)
+		if (checkForSynch && checkIfSynched())
+			return day;
+
+		// Reset flashed
+		for (int i = 0; i < octoAt.length; i++) {
+			for (int j = 0; j < octoAt[0].length; j++) {
+				if (hasFlashed[i][j]) {
+					hasFlashed[i][j] = false;
+					octoAt[i][j] = 0;
+				}
+			}
+		}
+		return -1; // Unsynced Day or checkForSynched == false
 	}
 
-	static int txt2nr(String s) {
-		return Integer.valueOf(s);
+	static boolean checkIfSynched() {
+		int sugg = octoAt[0][0];
+		for (int i = 0; i < octoAt.length; i++) {
+			for (int j = 0; j < octoAt[0].length; j++) {
+				if (octoAt[i][j] != sugg)
+					return false;
+			}
+		}
+		return true;
 	}
 
-	static int txt2nr(char s) {
-		return Integer.valueOf(s);
+	static void increaseNeighbours(int x, int y) {
+		// ADJACENT
+		if (x - 1 >= 0)
+			getsFlashed(x - 1, y);
+		if (x + 1 < octoAt.length)
+			getsFlashed(x + 1, y);
+		if (y - 1 >= 0)
+			getsFlashed(x, y - 1);
+		if (y + 1 < octoAt[0].length)
+			getsFlashed(x, y + 1);
+		
+		// DIAGONAL
+		if (x - 1 >= 0 && y - 1 >= 0)
+			getsFlashed(x - 1, y - 1);
+		if (x - 1 >= 0 && y + 1 < octoAt[0].length)
+			getsFlashed(x - 1, y + 1);
+		if (x + 1 < octoAt.length && y - 1 >= 0)
+			getsFlashed(x + 1, y - 1);
+		if (x + 1 < octoAt.length && y + 1 < octoAt[0].length)
+			getsFlashed(x + 1, y + 1);
 	}
 
-	static int nthChar2nr(String s, int index) {
-		return txt2nr(s.charAt(index));
+	static void getsFlashed(int x, int y) {
+		octoAt[x][y]++;
+		tryToFlash(x, y);
 	}
 
-	static int[] txt2intArr(String[] line) {
-		int[] res = new int[line.length];
-		for (int i = 0; i < line.length; i++)
-			res[i] = txt2nr(line[i]);
+	static void tryToFlash(int x, int y) {
+		if (!hasFlashed[x][y] && octoAt[x][y] > 9) {
+			flashes++;
+			hasFlashed[x][y] = true;
+			increaseNeighbours(x, y);
+		}
+	}
+
+	static int[][] buildMatrix(String[] input) {
+		int[][] m = new int[input[0].length()][input.length];
+		for (int i = 0; i < input.length; i++) {
+			String e = input[i];
+			int[] row = txt2intArr(e.toCharArray());
+			for (int j = 0; j < row.length; j++)
+				m[j][i] = row[j];
+		}
+		return m;
+	}
+
+	static int[] txt2intArr(char[] cs) {
+		int[] res = new int[cs.length];
+		for (int i = 0; i < cs.length; i++)
+			res[i] = Character.digit(cs[i], 10);
 		return res;
 	}
 
-	static double rnd(double val, int comma) {
-		return Math.round(val * Math.pow(10, comma)) / Math.pow(10, comma);
-	}
 }
