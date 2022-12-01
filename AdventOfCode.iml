@@ -16,6 +16,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/year2021/day13" />
       <excludeFolder url="file://$MODULE_DIR$/src/year2021/day14" />
       <excludeFolder url="file://$MODULE_DIR$/src/year2021/day15" />
+      <excludeFolder url="file://$MODULE_DIR$/src/year2021" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
