@@ -17,8 +17,8 @@ public class Task_B extends Task {
 	@Override
 	protected Object exec(AdventOfCode aoc) {
 		return new Generator<>(aoc.inputTxt())
-				.map(f -> new Generator<>(f.split("\n\n"))       // Teile String in Gruppen
-						.map(v -> new Generator<>(v.split("\n")) // Teile Gruppen in Einträge
+				.map(f -> new Generator<>(f.split("\n\n"))                       // Teile String in Gruppen
+						.map(v -> new Generator<>(v.split("\n"))         // Teile Gruppen in Einträge
 								.map(Integer::parseInt)          // Konvertiere Einträge zu Zahlen
 								.reduce(0, Integer::sum))        // Berechne die Summe der Einträge jeder Gruppe
 				)
