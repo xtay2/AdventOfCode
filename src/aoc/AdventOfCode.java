@@ -1,4 +1,4 @@
-package helper;
+package aoc;
 
 import java.io.IOException;
 import java.net.URI;
@@ -26,7 +26,7 @@ public class AdventOfCode {
 		this.day = Integer.parseInt(name.substring(dayIdx, dayIdx + 2));
 	}
 
-	private static final Path TOKEN_PATH = Path.of("token.txt");
+	private static final Path TOKEN_PATH = Path.of("files/token.txt");
 
 	public List<String> inputLst() {
 		updateInput();
@@ -44,7 +44,8 @@ public class AdventOfCode {
 	public String inputTxt() {
 		updateInput();
 		try {
-			return Files.readString(inputFile());		} catch (IOException ioe) {
+			return Files.readString(inputFile());
+		} catch (IOException ioe) {
 			throw new AssertionError("Could not read input.", ioe);
 		}
 	}
@@ -60,9 +61,9 @@ public class AdventOfCode {
 			throw new IllegalArgumentException("Please choose a valid year. (2015-" + Year.now().getValue() + ") Was: " + year);
 		if (day < 1 || day > 24)
 			throw new IllegalArgumentException("Please choose a valid day. (1-24) Was: " + day);
-		if (Files.exists(inputFile()))
-			return;
 		try {
+			if (Files.exists(inputFile()) && !Files.readString(inputFile()).equals("Puzzle inputs differ by user.  Please log in to get your puzzle input.\n"))
+				return;
 			if (Files.notExists(TOKEN_PATH))
 				throw new IllegalStateException("Please create a file with your auth token!");
 			var request = HttpRequest
@@ -81,7 +82,7 @@ public class AdventOfCode {
 	}
 
 	private Path inputFile() {
-		return Path.of("input/" + year + "/day_" + day + ".txt");
+		return Path.of("files/input/" + year + "/day_" + day + ".txt");
 	}
 
 
