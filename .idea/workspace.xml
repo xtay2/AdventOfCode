@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="pretty(Task A)">
-      <change afterPath="$PROJECT_DIR$/src/year2022/day02/Task_B.java" afterDir="false" />
+    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="done(Task B)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day02/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day02/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day02/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day02/Task_B.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669962711813</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="done(Task B)">
+      <created>1669965877727</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669965877727</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,7 +242,8 @@
     <MESSAGE value="fix(Commented)" />
     <MESSAGE value="fix(Fontspacing)" />
     <MESSAGE value="pretty(Task A)" />
-    <option name="LAST_COMMIT_MESSAGE" value="pretty(Task A)" />
+    <MESSAGE value="done(Task B)" />
+    <option name="LAST_COMMIT_MESSAGE" value="done(Task B)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
