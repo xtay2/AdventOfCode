@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="pretty(Task B)">
-      <change afterPath="$PROJECT_DIR$/src/year2022/day03/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2022/day03/Task_B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2022/day04/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2022/day04/Task_B.java" afterDir="false" />
+    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="done(Task A &amp; B)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day03/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day03/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day03/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day03/Task_B.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,15 +60,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/x-tay/Documents/Programmierung/Eclipse/Java/AdventOfCode/src/year2022/day04",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/x-tay/Documents/Programmierung/Eclipse/Java/AdventOfCode/src/year2022/day04&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\x-tay\Documents\Programmierung\Eclipse\Java\AdventOfCode\src\year2022\day04" />
@@ -232,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669967219537</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="done(Task A &amp; B)">
+      <created>1670045575232</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670045575232</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,7 +261,8 @@
     <MESSAGE value="pretty(Task A)" />
     <MESSAGE value="done(Task B)" />
     <MESSAGE value="pretty(Task B)" />
-    <option name="LAST_COMMIT_MESSAGE" value="pretty(Task B)" />
+    <MESSAGE value="done(Task A &amp; B)" />
+    <option name="LAST_COMMIT_MESSAGE" value="done(Task A &amp; B)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

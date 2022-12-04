@@ -15,17 +15,14 @@ public class Task_A extends Task {
 		for (var line : aoc.inputLst()) {
 			var c = inBoth(line.substring(0, line.length() / 2), line.substring(line.length() / 2));
 			prio += Character.isUpperCase(c) ? c - 'A' + 27 : c - 'a' + 1;
-
 		}
 		return prio;
 	}
 
 	static Character inBoth(String a, String b) {
 		for (char c1 : a.toCharArray()) {
-			for (char c2 : b.toCharArray()) {
-				if (c1 == c2)
-					return c1;
-			}
+			if (b.indexOf(c1) != -1)
+				return c1;
 		}
 		return null;
 	}
