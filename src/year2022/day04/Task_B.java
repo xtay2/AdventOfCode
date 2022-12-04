@@ -26,9 +26,7 @@ public class Task_B extends Task {
 
 
 	boolean contains(int lower1, int upper1, int lower2, int upper2) {
-		return (lower2 <= upper1 && upper1 <= upper2)
-				|| (lower2 <= lower1 && lower1 <= upper2)
-				|| (lower1 <= upper2 && upper2 <= upper1)
-				|| (lower1 <= lower2 && lower2 <= upper1);
+		return (lower1 <= lower2 && lower2 <= upper1)
+				|| (lower2 <= lower1 && lower1 <= upper2);
 	}
 }
