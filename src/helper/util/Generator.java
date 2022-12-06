@@ -74,6 +74,11 @@ public class Generator<T> implements Iterable<T> {
 		return calc(info -> mapper.apply(info.val()));
 	}
 
+	/** Preforms {@link #map(Function)} that results in an array, and wraps the result into a generator. */
+	public <R> Generator<Generator<R>> mapWrap(Function<T, R[]> mapper) {
+		return map(v -> new Generator<>(mapper.apply(v)));
+	}
+
 	/**
 	 * Like {@link #map(Function)}. But the passed {@link Function} gets
 	 * detailed {@link GenInfo} for every value.

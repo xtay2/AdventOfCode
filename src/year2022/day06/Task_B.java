@@ -3,12 +3,6 @@ package year2022.day06;
 import aoc.AdventOfCode;
 import aoc.Task;
 
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.stream.Collectors;
-
-import static helper.math.Conversion.chars;
-
 public class Task_B extends Task {
 
 	static {

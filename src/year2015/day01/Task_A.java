@@ -1,7 +1,9 @@
-package year2022.day06;
+package year2015.day01;
 
 import aoc.AdventOfCode;
 import aoc.Task;
+
+import static helper.StringHelper.occ;
 
 public class Task_A extends Task {
 
@@ -11,13 +13,7 @@ public class Task_A extends Task {
 
 	@Override
 	protected Object exec(AdventOfCode aoc) {
-		var n = 4;
 		var input = aoc.inputTxt();
-		for (int i = 0; i < input.length() - n; i++) {
-			if (input.substring(i, i + n).chars().distinct().count() == n)
-				return i + n;
-		}
-		return "Not found";
+		return occ('(', input) - occ(')', input);
 	}
-
 }

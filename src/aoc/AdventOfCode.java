@@ -1,5 +1,7 @@
 package aoc;
 
+import helper.math.Conversion;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -52,6 +54,10 @@ public class AdventOfCode {
 
 	public String[] inputArr() {
 		return inputTxt().split("\n");
+	}
+
+	public Character[] inputChars() {
+		return inputTxt().chars().mapToObj(c -> (char) c).toArray(Character[]::new);
 	}
 
 	// FILES
