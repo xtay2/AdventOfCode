@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="pretty(Day 5)">
-      <change afterPath="$PROJECT_DIR$/src/year2022/day7/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2022/day7/Task_B.java" afterDir="false" />
+    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="pretty(Day 6)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/math/Conversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/helper/math/Conversion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/year2022/day06/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day06/Task_A.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/year2022/day06/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day06/Task_B.java" afterDir="false" />
     </list>
@@ -269,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670219798095</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="pretty(Day 6)">
+      <created>1670304408928</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670304408928</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,7 +304,8 @@
     <MESSAGE value="pretty(Day 4)" />
     <MESSAGE value="shortened(Task B)" />
     <MESSAGE value="pretty(Day 5)" />
-    <option name="LAST_COMMIT_MESSAGE" value="pretty(Day 5)" />
+    <MESSAGE value="pretty(Day 6)" />
+    <option name="LAST_COMMIT_MESSAGE" value="pretty(Day 6)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

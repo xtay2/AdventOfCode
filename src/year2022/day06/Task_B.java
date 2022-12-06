@@ -7,6 +7,8 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.stream.Collectors;
 
+import static helper.math.Conversion.chars;
+
 public class Task_B extends Task {
 
 	static {
@@ -18,7 +20,7 @@ public class Task_B extends Task {
 		var n = 14;
 		var input = aoc.inputTxt();
 		for (int i = 0; i < input.length() - n; i++) {
-			if (input.substring(i, i + n).chars().mapToObj(e -> (char) e).collect(Collectors.toSet()).size() == n)
+			if (chars(input.substring(i, i + n), new HashSet<>()).size() == n)
 				return i + n;
 		}
 		return "Not found";
