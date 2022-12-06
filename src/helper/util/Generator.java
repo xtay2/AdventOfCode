@@ -1,8 +1,5 @@
 package helper.util;
 
-import com.sun.tools.attach.AgentInitializationException;
-import helper.math.Conversion;
-
 import java.util.*;
 import java.util.function.*;
 import java.util.stream.Collectors;
@@ -11,7 +8,7 @@ import java.util.stream.Stream;
 /**
  * An eager Generator for the quick creation of lists.
  */
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"unchecked", "unused"})
 public class Generator<T> implements Iterable<T> {
 
 	private final List<T> content = new ArrayList<>();
@@ -85,7 +82,7 @@ public class Generator<T> implements Iterable<T> {
 		var modified = new Object[length()];
 		for (int i = 0; i < length(); i++)
 			modified[i] = mapper.apply(new GenInfo<>(this, i));
-		return new Generator<R>((R[]) modified);
+		return new Generator<>((R[]) modified);
 	}
 
 	/**
@@ -118,7 +115,7 @@ public class Generator<T> implements Iterable<T> {
 			if (condition.test(o))
 				res.add(o);
 		}
-		return new Generator<T>(res);
+		return new Generator<>(res);
 	}
 
 	/**
@@ -153,7 +150,7 @@ public class Generator<T> implements Iterable<T> {
 	public <R> R reduce(R identity, BiFunction<R, T, R> operator) {
 		var val = identity;
 		for (var e : content)
-			val = operator.apply(val, (T) e);
+			val = operator.apply(val, e);
 		return val;
 	}
 

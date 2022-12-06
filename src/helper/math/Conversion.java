@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
+@SuppressWarnings("unused")
 public class Conversion {
 
 	public static <T> T[] subarray(T[] array, int start, int end) {

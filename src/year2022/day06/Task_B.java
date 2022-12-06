@@ -17,13 +17,12 @@ public class Task_B extends Task {
 
 	@Override
 	protected Object exec(AdventOfCode aoc) {
-		var n = 14;
+		var n = 4;
 		var input = aoc.inputTxt();
 		for (int i = 0; i < input.length() - n; i++) {
-			if (chars(input.substring(i, i + n), new HashSet<>()).size() == n)
+			if (input.substring(i, i + n).chars().distinct().count() == n)
 				return i + n;
 		}
 		return "Not found";
 	}
-
 }
