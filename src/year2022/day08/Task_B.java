@@ -1,12 +1,12 @@
-package year2022.day7;
+package year2022.day08;
 
 import aoc.AdventOfCode;
 import aoc.Task;
 
-public class Task_A extends Task {
+public class Task_B extends Task {
 
 	static {
-		new Task_A();
+		new Task_B();
 	}
 
 	@Override
