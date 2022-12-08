@@ -5,6 +5,7 @@ import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public abstract class Task implements Comparable<Task> {
 
@@ -27,8 +28,7 @@ public abstract class Task implements Comparable<Task> {
 	public static void main(String[] args) {
 		if (!TASKS.isEmpty()) {
 			var latest = TASKS.get(TASKS.size() - 1);
-			var solution = latest.exec(latest.aoc).toString();
-
+			var solution = Objects.toString(latest.exec(latest.aoc));
 			// Copy solution to clipboard
 			StringSelection selection = new StringSelection(solution);
 			Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();

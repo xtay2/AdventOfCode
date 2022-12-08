@@ -10,5 +10,8 @@ public class Tuple<A, B> {
 		this.y = y;
 	}
 
-
+	@Override
+	public String toString() {
+		return "(" + x + ", " + y + ")";
+	}
 }

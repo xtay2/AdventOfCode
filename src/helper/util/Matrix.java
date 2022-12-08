@@ -1,15 +1,12 @@
 package helper.util;
 
+import helper.StringHelper;
 import helper.util.point.Point;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.function.BiFunction;
-import java.util.function.BiPredicate;
-import java.util.function.BinaryOperator;
-import java.util.function.Function;
+import java.util.function.*;
 import java.util.stream.Stream;
 
 @SuppressWarnings("unchecked")
@@ -28,10 +25,25 @@ public class Matrix<T> {
 		}
 	}
 
+	public Matrix(String s) { // TODO: Fix my dimensions!
+		var mapping = Arrays.stream(s.split("\n")).map(StringHelper::charArray).toArray(Character[][]::new);
+		// Remap
+		content = new Character[mapping[0].length][mapping.length];
+		for (int i = 0; i < content[0].length; i++) {
+			for (int j = 0; j < content.length; j++) {
+				content[i][j] = mapping[j][i];
+			}
+		}
+	}
+
 	public Matrix(Iterable<T> entries, int width, int height) {
 		this(width, height);
 		var iterator = entries.iterator();
 		fill(p -> iterator.next());
+	}
+
+	public T get(int x, int y) {
+		return get(new Point(x, y));
 	}
 
 	public T get(Point p) {
@@ -44,15 +56,18 @@ public class Matrix<T> {
 		return (T) prev;
 	}
 
-	public List<Tuple<T, Point>> toList() {
-		var res = new ArrayList<Tuple<T, Point>>();
+	public List<T> toList() {
+		var res = new ArrayList<T>();
 		for (int i = 0; i < width(); i++) {
 			for (int j = 0; j < height(); j++) {
-				var point = new Point(i, j);
-				res.add(new Tuple<>(get(point), point));
+				res.add(get(j, i));
 			}
 		}
 		return res;
+	}
+
+	public Stream<T> toStream() {
+		return toList().stream();
 	}
 
 	public int width() {
@@ -70,35 +85,64 @@ public class Matrix<T> {
 	public Matrix<T> fill(Function<Point, T> supplier) {
 		for (int i = 0; i < width(); i++) {
 			for (int j = 0; j < height(); j++) {
-				var point = new Point(i, j);
+				var point = new Point(j, i);
 				insert(supplier.apply(point), point);
 			}
 		}
 		return this;
 	}
 
-	public Stream<Tuple<T, Point>> filter(BiPredicate<T, Point> condition) {
+	public Stream<Tuple<T, Point>> filter(BiPredicate<Matrix<T>, Point> condition) {
 		var res = new ArrayList<Tuple<T, Point>>();
 		for (int i = 0; i < width(); i++) {
 			for (int j = 0; j < height(); j++) {
-				var point = new Point(i, j);
+				var point = new Point(j, i);
 				var tuple = new Tuple<>(get(point), point);
-				if (condition.test(tuple.x, tuple.y))
+				if (condition.test(this, point))
 					res.add(tuple);
 			}
 		}
 		return res.stream();
 	}
 
-	public <R> Matrix<R> map(BiFunction<T, Point, R> transform) {
+	public <R> Matrix<R> map(Function<T, R> transform) {
 		var res = new Matrix<R>(width(), height());
 		for (int i = 0; i < width(); i++) {
 			for (int j = 0; j < height(); j++) {
-				var point = new Point(i, j);
-				res.insert(transform.apply(get(point), point), point);
+				var point = new Point(j, i);
+				res.insert(transform.apply(get(point)), point);
 			}
 		}
 		return res;
+	}
+
+	public <R> Matrix<R> map(BiFunction<Matrix<T>, Point, R> transform) {
+		var res = new Matrix<R>(width(), height());
+		for (int i = 0; i < width(); i++) {
+			for (int j = 0; j < height(); j++) {
+				var point = new Point(j, i);
+				res.insert(transform.apply(this, point), point);
+			}
+		}
+		return res;
+	}
+
+	public Matrix<T> peek(Consumer<T> consumer) {
+		for (int i = 0; i < width(); i++) {
+			for (int j = 0; j < height(); j++) {
+				consumer.accept(get(new Point(j, i)));
+			}
+		}
+		return this;
+	}
+
+	public Matrix<T> peek(BiConsumer<Matrix<T>, Point> consumer) {
+		for (int i = 0; i < width(); i++) {
+			for (int j = 0; j < height(); j++) {
+				consumer.accept(this, new Point(j, i));
+			}
+		}
+		return this;
 	}
 
 	public List<T> reduceLine(T indentity, BinaryOperator<T> merger) {
@@ -106,16 +150,39 @@ public class Matrix<T> {
 		for (int i = 0; i < width(); i++) {
 			var line = indentity;
 			for (int j = 0; j < height(); j++)
-				line = merger.apply(line, get(new Point(i, j)));
+				line = merger.apply(line, get(new Point(j, i)));
 			res.add(line);
 		}
 		return res;
 	}
 
-	@Override
-	public String toString() {
-		return String.join("\n", map((t, p) -> "[" + t + "]").reduceLine("", (a, b) -> a + b));
+	public Stream<T> col(int row) {
+		return Arrays.stream(content[row]).map(val -> (T) val);
+	}
+
+	public Stream<T> col(int row, int start) {
+		return col(row, start, content[row].length);
+	}
+
+	public Stream<T> col(int row, int start, int end) {
+		return col(row).skip(start).limit(end + 1 - start);
+	}
+
+	public Stream<T> row(int col) {
+		return new Generator<T>(content.length).index(i -> get(i, col)).stream();
+	}
+
+	public Stream<T> row(int col, int start) {
+		return row(col, start, content.length);
+	}
+
+	public Stream<T> row(int col, int start, int end) {
+		return row(col).skip(start).limit(end + 1 - start);
 	}
 
 
+	@Override
+	public String toString() {
+		return String.join("\n", map((t, p) -> "[" + t.get(p) + "]").reduceLine("", (a, b) -> a + b));
+	}
 }

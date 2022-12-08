@@ -71,7 +71,7 @@ public class Task_B extends Task {
 
 	}
 
-	static final class File extends Content {
+	static class File extends Content {
 		final long size;
 
 		File(String name, Directory parent, long size) {

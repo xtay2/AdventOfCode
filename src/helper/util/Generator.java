@@ -190,7 +190,7 @@ public class Generator<T> implements Iterable<T> {
 	@Override
 	public String toString() {
 		return content.stream()
-				.map(v -> v.getClass().isArray()
+				.map(v -> v == null ? "null" : v.getClass().isArray()
 						? Arrays.deepToString((T[]) v)
 						: v.toString()
 				)
