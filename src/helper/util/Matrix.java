@@ -51,6 +51,8 @@ public class Matrix<T> {
 	}
 
 	public T insert(T val, Point p) {
+		if (!isInBounds(p))
+			throw new IndexOutOfBoundsException(p + " is out of bounds.");
 		var prev = get(p);
 		content[p.x][p.y] = val;
 		return (T) prev;
