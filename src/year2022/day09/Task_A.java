@@ -7,6 +7,7 @@ import java.awt.*;
 import java.util.HashSet;
 import java.util.Map;
 
+import static java.lang.Integer.*;
 import static java.lang.Math.abs;
 
 public class Task_A extends Task {
@@ -17,15 +18,14 @@ public class Task_A extends Task {
 
 	@Override
 	protected Object exec(AdventOfCode aoc) {
-		var head = new Point(0, 0);
-		var tail = new Point();
+		Point head = new Point(), tail = new Point();
 		var horiDisp = Map.of("L", -1, "U", 0, "R", 1, "D", 0);
 		var vertDisp = Map.of("L", 0, "U", -1, "R", 0, "D", 1);
 		var movements = new HashSet<Point>();
 		movements.add(tail);
 		for (var line : aoc.inputLst()) {
 			var d = line.split(" ")[0];
-			var amt = Integer.parseInt(line.split(" ")[1]);
+			var amt = parseInt(line.split(" ")[1]);
 			for (int x = 0; x < amt; x++) {
 				head = new Point(head.x + vertDisp.get(d), head.y + horiDisp.get(d));
 				tail = moveTail(head, tail);

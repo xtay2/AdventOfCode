@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import static java.lang.Long.parseLong;
+
 public class Task_B extends Task {
 
 	static {
@@ -41,7 +43,7 @@ public class Task_B extends Task {
 					current.files.add(new Directory(line.split(" ")[1], current));
 				else {
 					var info = line.split(" ");
-					current.files.add(new File(info[1], current, Long.parseLong(info[0])));
+					current.files.add(new File(info[1], current, parseLong(info[0])));
 				}
 			}
 		}

@@ -5,6 +5,8 @@ import aoc.Task;
 
 import java.util.ArrayList;
 
+import static java.lang.Integer.parseInt;
+
 public class Task_B extends Task {
 
 	static {
@@ -17,7 +19,7 @@ public class Task_B extends Task {
 		for (var line : aoc.inputLst()) {
 			changes.add(0);
 			if (line.startsWith("addx"))
-				changes.add(Integer.parseInt(line.split(" ")[1]));
+				changes.add(parseInt(line.split(" ")[1]));
 		}
 		var x = 1;
 		StringBuilder s = new StringBuilder("\n");

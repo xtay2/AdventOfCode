@@ -1,7 +1,5 @@
 package aoc;
 
-import helper.math.Conversion;
-
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -13,6 +11,8 @@ import java.time.Year;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static java.lang.Integer.parseInt;
+
 public class AdventOfCode {
 
 	public final int year;
@@ -22,10 +22,10 @@ public class AdventOfCode {
 		var name = task.getCanonicalName();
 
 		int yearIdx = name.indexOf("year") + 4;
-		this.year = Integer.parseInt(name.substring(yearIdx, yearIdx + 4));
+		this.year = parseInt(name.substring(yearIdx, yearIdx + 4));
 
 		int dayIdx = name.indexOf("day") + 3;
-		this.day = Integer.parseInt(name.substring(dayIdx, dayIdx + 2));
+		this.day = parseInt(name.substring(dayIdx, dayIdx + 2));
 	}
 
 	private static final Path TOKEN_PATH = Path.of("files/token.txt");

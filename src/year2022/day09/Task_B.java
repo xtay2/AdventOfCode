@@ -8,6 +8,7 @@ import java.awt.*;
 import java.util.HashSet;
 import java.util.Map;
 
+import static java.lang.Integer.parseInt;
 import static java.lang.Math.abs;
 
 public class Task_B extends Task {
@@ -18,7 +19,7 @@ public class Task_B extends Task {
 
 	@Override
 	protected Object exec(AdventOfCode aoc) {
-		var head = new Point(0, 0);
+		var head = new Point();
 		var tails = new Generator<>(9, new Point()).list();
 		var horiDisp = Map.of("L", -1, "U", 0, "R", 1, "D", 0);
 		var vertDisp = Map.of("L", 0, "U", -1, "R", 0, "D", 1);
@@ -26,7 +27,7 @@ public class Task_B extends Task {
 		movements.add(tails.get(8));
 		for (var line : aoc.inputLst()) {
 			var d = line.split(" ")[0];
-			var amt = Integer.parseInt(line.split(" ")[1]);
+			var amt = parseInt(line.split(" ")[1]);
 			for (int x = 0; x < amt; x++) {
 				head = new Point(head.x + vertDisp.get(d), head.y + horiDisp.get(d));
 				tails.set(0, moveTail(head, tails.get(0)));
