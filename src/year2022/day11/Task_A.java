@@ -4,13 +4,13 @@ import aoc.AdventOfCode;
 import aoc.Task;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Function;
 
+import static java.lang.Integer.parseInt;
+import static java.util.Arrays.stream;
 import static year2022.day11.Task_A.Monkey.monkeys;
-
 
 public class Task_A extends Task {
 
@@ -27,15 +27,17 @@ public class Task_A extends Task {
 				continue;
 			}
 			monkeys.add(new Monkey(
-					Arrays.stream(input.remove(0).split(": ")[1].split(", ")).mapToInt(Integer::parseInt).toArray(),
+					stream(input.remove(0).split(": ")[1].split(", ")).mapToInt(Integer::parseInt).toArray(),
 					buildExp(input.remove(0).split("new = ")[1]),
-					Integer.parseInt(input.remove(0).split("divisible by ")[1]),
-					Integer.parseInt(input.remove(0).split("monkey ")[1]),
-					Integer.parseInt(input.remove(0).split("monkey ")[1])
+					parseInt(input.remove(0).split("divisible by ")[1]),
+					parseInt(input.remove(0).split("monkey ")[1]),
+					parseInt(input.remove(0).split("monkey ")[1])
 			));
 		}
+
 		for (int round = 0; round < 20; round++)
 			monkeys.forEach(Monkey::throwItems);
+
 		return monkeys.stream().map(m -> m.business)
 				.sorted(Comparator.reverseOrder())
 				.limit(2).reduce((a, b) -> a * b).orElseThrow();
@@ -44,7 +46,7 @@ public class Task_A extends Task {
 	static Function<Integer, Integer> buildExp(String exp) {
 		if (exp.equals("old * old"))
 			return x -> x * x;
-		int y = Integer.parseInt(exp.split(" . ")[1]);
+		int y = parseInt(exp.split(" . ")[1]);
 		if (exp.matches("old \\+ \\d+"))
 			return x -> x + y;
 		if (exp.matches("old \\* \\d+"))
@@ -63,7 +65,7 @@ public class Task_A extends Task {
 		final int divBy, targetTrue, targetFalse;
 
 		public Monkey(int[] items, Function<Integer, Integer> operation, int divBy, int targetTrue, int targetFalse) {
-			this.items.addAll(Arrays.stream(items).boxed().toList());
+			this.items.addAll(stream(items).boxed().toList());
 			this.operation = operation;
 			this.divBy = divBy;
 			this.targetTrue = targetTrue;

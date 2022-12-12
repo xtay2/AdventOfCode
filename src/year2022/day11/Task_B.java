@@ -4,11 +4,12 @@ import aoc.AdventOfCode;
 import aoc.Task;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Function;
 
+import static java.lang.Integer.parseInt;
+import static java.util.Arrays.stream;
 import static year2022.day11.Task_B.Monkey.monkeys;
 
 
@@ -29,11 +30,11 @@ public class Task_B extends Task {
 				continue;
 			}
 			monkeys.add(new Monkey(
-					Arrays.stream(input.remove(0).split(": ")[1].split(", ")).mapToLong(Long::parseLong).toArray(),
+					stream(input.remove(0).split(": ")[1].split(", ")).mapToLong(Long::parseLong).toArray(),
 					buildExp(input.remove(0).split("new = ")[1]),
-					Integer.parseInt(input.remove(0).split("divisible by ")[1]),
-					Integer.parseInt(input.remove(0).split("monkey ")[1]),
-					Integer.parseInt(input.remove(0).split("monkey ")[1])
+					parseInt(input.remove(0).split("divisible by ")[1]),
+					parseInt(input.remove(0).split("monkey ")[1]),
+					parseInt(input.remove(0).split("monkey ")[1])
 			));
 		}
 		lcd = monkeys.stream().map(m -> m.divBy).reduce((a, b) -> { // LCD-Algorithm
@@ -42,8 +43,10 @@ public class Task_B extends Task {
 				d += higher;
 			return d;
 		}).orElseThrow();
+
 		for (int round = 0; round < 10000; round++)
 			monkeys.forEach(Monkey::throwItems);
+
 		return monkeys.stream().map(m -> m.business)
 				.sorted(Comparator.reverseOrder())
 				.limit(2).reduce((a, b) -> a * b).orElseThrow();
@@ -52,7 +55,7 @@ public class Task_B extends Task {
 	static Function<Long, Long> buildExp(String exp) {
 		if (exp.equals("old * old"))
 			return x -> x * x;
-		int y = Integer.parseInt(exp.split(" . ")[1]);
+		int y = parseInt(exp.split(" . ")[1]);
 		if (exp.matches("old \\+ \\d+"))
 			return x -> x + y;
 		if (exp.matches("old \\* \\d+"))
@@ -71,7 +74,7 @@ public class Task_B extends Task {
 		final int divBy, targetTrue, targetFalse;
 
 		public Monkey(long[] items, Function<Long, Long> operation, int divBy, int targetTrue, int targetFalse) {
-			this.items.addAll(Arrays.stream(items).boxed().toList());
+			this.items.addAll(stream(items).boxed().toList());
 			this.operation = operation;
 			this.divBy = divBy;
 			this.targetTrue = targetTrue;
