@@ -4,57 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(01/22)">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/google_code_gson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2022/day14/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2022/day14/Task_B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2022/day18/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2022/day19/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2022/day19/Task_B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2022/day20/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2022/day20/Task_B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2023/day05/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2023/day05/Task_B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2024/day01/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2024/day01/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(01/24)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/StreamHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/StringHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/math/Conversion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/math/MathHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/util/Generator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/util/Matrix.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/util/Tuple.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/util/point/AbstractPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/util/point/Point.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2015/day01/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2015/day01/Task_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2015/day01/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2015/day01/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2015/day02/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2015/day02/Task_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2015/day02/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2015/day02/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day02/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day02/Task_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day02/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day02/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day04/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day04/Task_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day04/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day04/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day05/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day05/Task_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day08/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day08/Task_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day08/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day08/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day09/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day09/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day12/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day12/Task_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day12/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day12/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day13/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day13/Task_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day13/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day13/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2023/day01/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2023/day01/Task_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helper/helper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../helper/helper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helper/src/helper/base/text/StringHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helper/src/helper/base/text/StringHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helper/src/helper/util/ArrayHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helper/src/helper/util/ArrayHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../helper/src/helper/util/CollectionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helper/src/helper/util/CollectionHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +237,7 @@
       <workItem from="1701734275575" duration="355000" />
       <workItem from="1701885721631" duration="10732000" />
       <workItem from="1702462217455" duration="22000" />
-      <workItem from="1733055959578" duration="1545000" />
+      <workItem from="1733055959578" duration="1774000" />
     </task>
     <task id="LOCAL-00001" summary="aoc(Tag 1)">
       <created>1669875481381</created>
@@ -512,7 +463,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701888706557</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="feat(01/24)">
+      <option name="closed" value="true" />
+      <created>1733057601656</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1733057601656</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -530,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="done(Task B)" />
     <MESSAGE value="pretty(Task B)" />
     <MESSAGE value="done(Task A &amp; B)" />
     <MESSAGE value="pretty(Day 3)" />
@@ -555,7 +513,8 @@
     <MESSAGE value="feat(03/23)" />
     <MESSAGE value="feat(04/23)" />
     <MESSAGE value="feat(01/22)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(01/22)" />
+    <MESSAGE value="feat(01/24)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(01/24)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
