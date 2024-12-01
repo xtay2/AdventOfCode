@@ -2,7 +2,7 @@ package year2022.day09;
 
 import aoc.AdventOfCode;
 import aoc.Task;
-import helper.util.Generator;
+import helper.util.ListHelper;
 
 import java.awt.*;
 import java.util.HashSet;
@@ -20,7 +20,7 @@ public class Task_B extends Task {
 	@Override
 	protected Object exec(AdventOfCode aoc) {
 		var head = new Point();
-		var tails = new Generator<>(9, new Point()).list();
+		var tails = ListHelper.generator(new Point(), 9);
 		var horiDisp = Map.of("L", -1, "U", 0, "R", 1, "D", 0);
 		var vertDisp = Map.of("L", 0, "U", -1, "R", 0, "D", 1);
 		var movements = new HashSet<Point>();

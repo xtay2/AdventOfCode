@@ -35,6 +35,7 @@ public class Task_A extends Task {
 		return Arrays.stream(stacks).map(e -> e.get(0).toString()).collect(Collectors.joining(""));
 	}
 
+	@SuppressWarnings("unchecked")
 	List<Character>[] buildStacks(List<String> lines) {
 		List<Character>[] stacks = new ArrayList[9];
 		Arrays.setAll(stacks, i -> new ArrayList<>());

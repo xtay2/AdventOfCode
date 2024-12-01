@@ -4,16 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="pretty(Year 2022, Day 11, Task A &amp; B)">
+    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(01/22)">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/google_code_gson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2022/day14/Task_A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2022/day14/Task_B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2022/day18/Task_A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2022/day19/Task_A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2022/day19/Task_B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2022/day20/Task_A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2022/day20/Task_B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2023/day05/Task_A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2023/day05/Task_B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day01/Task_A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day01/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aoc/AdventOfCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/AdventOfCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day06/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day06/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day07/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day07/Task_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day07/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day07/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day09/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day09/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AdventOfCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/StreamHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/StringHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/math/Conversion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/math/MathHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/util/Generator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/util/Matrix.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/util/Tuple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/util/point/AbstractPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helper/util/point/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2015/day01/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2015/day01/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2015/day01/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2015/day01/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2015/day02/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2015/day02/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2015/day02/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2015/day02/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day02/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day02/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day02/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day02/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day04/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day04/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day04/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day04/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day05/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day05/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day08/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day08/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day08/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day08/Task_B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/year2022/day09/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day09/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day10/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day10/Task_A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/year2022/day10/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day10/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day12/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day12/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day12/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day12/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day13/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day13/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day13/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day13/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2023/day01/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2023/day01/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helper/helper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../helper/helper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helper/src/helper/base/text/StringHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helper/src/helper/base/text/StringHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helper/src/helper/util/ArrayHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helper/src/helper/util/ArrayHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helper/src/helper/util/CollectionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helper/src/helper/util/CollectionHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +67,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -53,17 +96,29 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="33e8bcb3-9b0e-4f9d-9d09-4221416fcf05" />
   </component>
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
+        <option value="master" />
         <option value="main" />
       </list>
     </option>
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="kryeqvmd" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
   <component name="ProjectId" id="2IBwiuOElfloBErA0O1eW6KEsjk" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -72,38 +127,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/x-tay/Documents/Programmierung/Java/AdventOfCode/src/year2022/day11&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.toDoOptions&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Task_A.executor": "Run",
+    "Application.Task_B.executor": "Run",
+    "Application.year2024.day01.Task_B.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "19",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/x-tay/Documents/Programmierung/Java/AdventOfCode",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\x-tay\Documents\Programmierung\Java\AdventOfCode\src\year2023\day03" />
+      <recent name="C:\Users\x-tay\Documents\Programmierung\Java\AdventOfCode\src\year2023" />
       <recent name="C:\Users\x-tay\Documents\Programmierung\Java\AdventOfCode\src\year2022\day11" />
       <recent name="C:\Users\x-tay\Documents\Programmierung\Java\AdventOfCode\src\year2022\day10" />
       <recent name="C:\Users\x-tay\Documents\Programmierung\Java\AdventOfCode\src\year2022\day09" />
-      <recent name="C:\Users\x-tay\Documents\Programmierung\Java\AdventOfCode\src\year2022\day08" />
-      <recent name="C:\Users\x-tay\Documents\Programmierung\Eclipse\Java\AdventOfCode\src\year2015\day02" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\x-tay\Documents\Programmierung\Java\helper\src\main\java\helper\base" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="year2022.day12" />
-      <recent name="year2015.day02" />
-      <recent name="year2015.day01" />
-      <recent name="year2022.day03" />
-      <recent name="year2022.day02" />
+      <recent name="year2024.day01" />
+      <recent name="year2023.day05" />
+      <recent name="year2023.day04" />
+      <recent name="year2023.day02" />
+      <recent name="year2023.day01" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.year2022.day11.Task_B">
+  <component name="RunManager" selected="Application.year2024.day01.Task_B">
     <configuration name="Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2022.day11.Task_A" />
+      <option name="MAIN_CLASS_NAME" value="year2024.day01.Task_A" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2022.day11.*" />
+          <option name="PATTERN" value="year2024.day01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,11 +191,12 @@
       </method>
     </configuration>
     <configuration name="Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2022.day09.Task_B" />
+      <option name="MAIN_CLASS_NAME" value="year2023.day05.Task_B" />
       <module name="AdventOfCode" />
+      <option name="VM_PARAMETERS" value="-Xmx16g" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2022.day09.*" />
+          <option name="PATTERN" value="year2023.day05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +204,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="year2022.day10.Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2022.day10.Task_A" />
+    <configuration name="year2023.day04.Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2023.day04.Task_B" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2022.day10.*" />
+          <option name="PATTERN" value="year2023.day04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,12 +217,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="year2022.day10.Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2022.day10.Task_B" />
+    <configuration name="year2023.day05.Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2023.day05.Task_A" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2022.day10.*" />
+          <option name="PATTERN" value="year2023.day05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,12 +230,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="year2022.day11.Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2022.day11.Task_B" />
+    <configuration name="year2024.day01.Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day01.Task_B" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2022.day11.*" />
+          <option name="PATTERN" value="year2024.day01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,21 +244,29 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.year2022.day11.Task_B" />
       <item itemvalue="Application.Task_A" />
-      <item itemvalue="Application.year2022.day10.Task_A" />
-      <item itemvalue="Application.year2022.day10.Task_B" />
+      <item itemvalue="Application.year2024.day01.Task_B" />
+      <item itemvalue="Application.year2023.day05.Task_A" />
+      <item itemvalue="Application.year2023.day04.Task_B" />
       <item itemvalue="Application.Task_B" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.year2022.day11.Task_B" />
+        <item itemvalue="Application.year2024.day01.Task_B" />
         <item itemvalue="Application.Task_A" />
-        <item itemvalue="Application.year2022.day10.Task_B" />
-        <item itemvalue="Application.year2022.day10.Task_A" />
         <item itemvalue="Application.Task_B" />
+        <item itemvalue="Application.year2023.day05.Task_A" />
+        <item itemvalue="Application.year2023.day04.Task_B" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -188,6 +276,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669668414510</updated>
+      <workItem from="1701426605519" duration="4816000" />
+      <workItem from="1701431585998" duration="914000" />
+      <workItem from="1701508786078" duration="1619000" />
+      <workItem from="1701605995529" duration="3058000" />
+      <workItem from="1701609190549" duration="91000" />
+      <workItem from="1701708112485" duration="1970000" />
+      <workItem from="1701723910885" duration="8575000" />
+      <workItem from="1701734275575" duration="355000" />
+      <workItem from="1701885721631" duration="10732000" />
+      <workItem from="1702462217455" duration="22000" />
+      <workItem from="1733055959578" duration="1545000" />
     </task>
     <task id="LOCAL-00001" summary="aoc(Tag 1)">
       <created>1669875481381</created>
@@ -357,8 +456,67 @@
       <option name="project" value="LOCAL" />
       <updated>1670820418781</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="pretty(all)">
+      <created>1670820796404</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1670820796404</updated>
+    </task>
+    <task id="LOCAL-00026" summary="pretty(Year 2022, Day 12, Task A &amp; B)">
+      <created>1670823781902</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1670823781902</updated>
+    </task>
+    <task id="LOCAL-00027" summary="pretty(Year 2022, Day 13, Task A &amp; B)">
+      <created>1670932663326</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1670932663326</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feat(01/23)">
+      <created>1701431764737</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1701431764737</updated>
+    </task>
+    <task id="LOCAL-00029" summary="feat(02/23)">
+      <created>1701510398344</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1701510398344</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat(03/23)">
+      <created>1701609249276</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1701609249276</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat(04/23)">
+      <created>1701886738365</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1701886738365</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat(01/22)">
+      <created>1701888706557</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1701888706557</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -372,13 +530,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="FORCE_NON_EMPTY_COMMENT" value="true" />
-    <MESSAGE value="fix(Merge)" />
-    <MESSAGE value="aoc(Tag 1)" />
-    <MESSAGE value="unversion" />
-    <MESSAGE value="fix(Commented)" />
-    <MESSAGE value="fix(Fontspacing)" />
-    <MESSAGE value="pretty(Task A)" />
     <MESSAGE value="done(Task B)" />
     <MESSAGE value="pretty(Task B)" />
     <MESSAGE value="done(Task A &amp; B)" />
@@ -395,7 +546,16 @@
     <MESSAGE value="pretty(Year 2022, Day 9, Task A &amp; B)" />
     <MESSAGE value="pretty(Year 2022, Day 10, Task A &amp; B)" />
     <MESSAGE value="pretty(Year 2022, Day 11, Task A &amp; B)" />
-    <option name="LAST_COMMIT_MESSAGE" value="pretty(Year 2022, Day 11, Task A &amp; B)" />
+    <MESSAGE value="pretty(all)" />
+    <MESSAGE value="pretty(Year 2022, Day 12, Task A &amp; B)" />
+    <MESSAGE value="pretty(Year 2022, Day 13, Task A &amp; B)" />
+    <MESSAGE value="update(Helper)" />
+    <MESSAGE value="feat(01/23)" />
+    <MESSAGE value="feat(02/23)" />
+    <MESSAGE value="feat(03/23)" />
+    <MESSAGE value="feat(04/23)" />
+    <MESSAGE value="feat(01/22)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(01/22)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

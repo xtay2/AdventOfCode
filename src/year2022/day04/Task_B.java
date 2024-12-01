@@ -2,7 +2,8 @@ package year2022.day04;
 
 import aoc.AdventOfCode;
 import aoc.Task;
-import helper.util.Generator;
+
+import static java.util.Arrays.stream;
 
 public class Task_B extends Task {
 
@@ -12,16 +13,14 @@ public class Task_B extends Task {
 
 	@Override
 	protected Object exec(AdventOfCode aoc) {
-		return new Generator<>(aoc.inputLst())
-				.map(line -> new Generator<>(line.split(","))
-						.map(group -> new Generator<>(group.split("-"))
-								.map(Integer::parseInt)
-						).flatten()
-						.map(v -> (Integer) v)
-						.list()
+		return aoc.inputLst().stream()
+				.map(line -> stream(line.split(","))
+						.flatMapToInt(group -> stream(group.split("-"))
+								.mapToInt(Integer::parseInt)
+						).toArray()
 				)
-				.filter(v -> contains(v.get(0), v.get(1), v.get(2), v.get(3)))
-				.length();
+				.filter(v -> contains(v[0], v[1], v[2], v[3]))
+				.count();
 	}
 
 

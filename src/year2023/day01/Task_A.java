@@ -16,7 +16,6 @@ public class Task_A extends Task {
         return aoc.inputStr()
                 .map(line -> {
                     var all = findAll("\\d", line);
-                    System.out.println(all + " for " + line);
                     return all.get(0) + all.get(all.size() - 1);
                 })
                 .mapToInt(Integer::parseInt)

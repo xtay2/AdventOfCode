@@ -2,9 +2,9 @@ package year2015.day02;
 
 import aoc.AdventOfCode;
 import aoc.Task;
-import helper.util.Generator;
 
-import static helper.math.MathHelper.*;
+import static helper.base.MathHelper.min;
+import static java.util.Arrays.stream;
 
 public class Task_A extends Task {
 
@@ -14,10 +14,11 @@ public class Task_A extends Task {
 
 	@Override
 	protected Object exec(AdventOfCode aoc) {
-		return new Generator<>(aoc.inputLst())
-				.mapWrap(l -> l.split("x"))
-				.map(g -> g.map(Integer::parseInt).list())
-				.reduce(0, (a, b) -> a + surface(b.get(0), b.get(1), b.get(2)));
+		return aoc.inputStr()
+				.map(l -> stream(l.split("x"))
+						.mapToInt(Integer::parseInt)
+						.toArray()
+				).reduce(0, (a, b) -> a + surface(b[0], b[1], b[2]), Integer::sum);
 	}
 
 	static int surface(int l, int w, int h) {

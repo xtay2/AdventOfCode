@@ -1,2 +1,4 @@
 token.txt
-/out/
+files
+/files/input/*
+/files/token.txt

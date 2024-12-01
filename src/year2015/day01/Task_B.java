@@ -3,10 +3,6 @@ package year2015.day01;
 import aoc.AdventOfCode;
 import aoc.Task;
 
-import java.util.Arrays;
-
-import static helper.StringHelper.occ;
-
 public class Task_B extends Task {
 
 	static {

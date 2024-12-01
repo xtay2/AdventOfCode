@@ -2,9 +2,6 @@ package year2022.day02;
 
 import aoc.AdventOfCode;
 import aoc.Task;
-import helper.util.Generator;
-
-import java.util.Arrays;
 
 public class Task_B extends Task {
 
@@ -14,7 +11,7 @@ public class Task_B extends Task {
 
 	@Override
 	protected Object exec(AdventOfCode aoc) {
-		return new Generator<>(aoc.inputLst())
+		return aoc.inputStr()
 				.map(l -> l.split(" "))
 				.map(a -> new Integer[]{a[0].charAt(0) - 'A' + 1, a[1].charAt(0) - 'X' + 1}) // Konvertiere zu zahlen
 				.map(a -> {
