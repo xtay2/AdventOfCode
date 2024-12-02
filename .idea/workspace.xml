@@ -4,192 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="fix(minor)">
-      <change afterPath="$PROJECT_DIR$/src/year2024/day02/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2024/day02/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(02/24)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/aoc/AdventOfCode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/aoc/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2015/day01/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2015/day01/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2015/day02/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2015/day02/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day01/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day01/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day02/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day02/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day03/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day03/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day04/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day04/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day05/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day05/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day06/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day06/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day07/Task_A$Content.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day07/Task_A$Directory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day07/Task_A$File.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day07/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day07/Task_B$Content.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day07/Task_B$Directory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day07/Task_B$File.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day07/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day08/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day08/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day09/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day09/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day10/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day10/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day11/Task_A$Monkey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day11/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day11/Task_B$Monkey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day11/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day12/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day12/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day13/Task_A$Composite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day13/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day13/Task_B$Composite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day13/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day14/Task_A$Material.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day14/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day14/Task_B$Material.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day14/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day18/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day19/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day19/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day20/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2022/day20/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day01/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day01/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day02/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day02/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day03/Task_A$Nr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day03/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day03/Task_B$Nr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day03/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day04/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day04/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day05/Task_A$SourceToDestMapping.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day05/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2023/day05/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2024/day01/Task_A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AdventOfCode/year2024/day01/Task_B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/annotations/DefaultFinal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/base/ClassHelper$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/base/ClassHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/base/MathHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/base/NumberHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/base/text/StringCaseHelper$StringCaseStyle$WordCaseStyle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/base/text/StringCaseHelper$StringCaseStyle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/base/text/StringCaseHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/base/text/StringHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/exceptions/InitializationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/io/ANSI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/io/FileHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/io/PathHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/JsonHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/parsing/JsonParsingException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/parsing/JsonPrinter$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/parsing/JsonPrinter$JsonPrintMode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/parsing/JsonPrinter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/parsing/JsonTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/type/JsonElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/type/container/JsonContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/type/container/JsonList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/type/container/JsonObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/type/primitive/JsonBool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/type/primitive/JsonNr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/type/primitive/JsonNull.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/type/primitive/JsonPrimitive.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/type/primitive/JsonText$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/json/type/primitive/JsonText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/misc/UnsafeHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/reflection/GenericHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/reflection/ReflectionHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/ArrayHelper$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/ArrayHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/ArrayMatrixHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/CollectionHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/ComparableHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/IterableHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/IteratorHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/ListHelper$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/ListHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/RegexHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/SetHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/StreamHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/annotations/DataStructure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/datastructures/tuples/Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/datastructures/tuples/Tuple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/datastructures/tuples/points/DecPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/datastructures/tuples/points/IntPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/datastructures/tuples/points/LongPoint.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/datastructures/tuples/points/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/functions/QuadFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/functions/TriFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/RegexElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/RegexInstance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/RegexPattern.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/RegexChar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/RegexGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/RegexPrefixedCharClass$CharClassPrefix.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/RegexPrefixedCharClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/RegexSingleChar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/RegexJavaCharClass$JavaCharClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/RegexJavaCharClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/RegexPOSIXCharClass$POSIXCharClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/RegexPOSIXCharClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/RegexPredefCharClass$PredefinedCharClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/RegexPredefCharClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/RegexUnicodeCharClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/unicode/RegexUnicodeCharClassBlock$UnicodeBlock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/unicode/RegexUnicodeCharClassBlock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/unicode/RegexUnicodeCharClassCategory$UnicodeCharClassCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/unicode/RegexUnicodeCharClassCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/unicode/RegexUnicodeCharClassProperty$UnicodeCharClassProperty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/unicode/RegexUnicodeCharClassProperty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/classes/unicode/RegexUnicodeCharClassScript.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/single/RegexHexChar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/single/RegexLiteralChar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/single/RegexOctalChar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/single/ctrl/RegexExtendedCtrlChar$ExtendedCtrlChar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/single/ctrl/RegexExtendedCtrlChar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/single/ctrl/RegexSingleCtrlChar$SingleCtrlChar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/chars/single/ctrl/RegexSingleCtrlChar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/groups/RegexAlternation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/groups/RegexCapturingGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/groups/RegexManualCharClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/groups/RegexQuoted.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/elements/groups/RegexSequence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/RegexBoundaryMatch$BoundaryMatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/RegexBoundaryMatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/RegexQuote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/RegexSpecialConstruct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/backrefs/RegexIndexedBackRef.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/backrefs/RegexNamedBackRef.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/construct/RegexFlaggableConstruct$MatchFlags.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/construct/RegexFlaggableConstruct$RegexFlaggedNonCapturingGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/construct/RegexFlaggableConstruct$RegexMatchFlagToggle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/construct/RegexFlaggableConstruct.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/construct/RegexLookAround$LookAroundType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/construct/RegexLookAround.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/construct/RegexNamedCapturingGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/construct/RegexNonCapturingGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/quantifiers/RegexQuantifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/quantifiers/RegexRangeQuantifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/quantifiers/RegexSimpleQuantifier$SimpleQuantifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/quantifiers/RegexSimpleQuantifier.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/quantifiers/quantified/RegexDoubleQuantified$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/quantifiers/quantified/RegexDoubleQuantified.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/quantifiers/quantified/RegexSingleQuantified$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/regex/modifiers/quantifiers/quantified/RegexSingleQuantified.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/helper/util/types/Nat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/helper/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/AdventOfCode/UtilHelperTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aoc/AdventOfCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/AdventOfCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +93,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dev",
     "jdk.selected.JAVA_MODULE": "19",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/x-tay/Documents/Programmierung/Java/AdventOfCode",
@@ -287,8 +103,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15429688",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
@@ -426,7 +242,7 @@
       <workItem from="1702462217455" duration="22000" />
       <workItem from="1733055959578" duration="1774000" />
       <workItem from="1733088945151" duration="227000" />
-      <workItem from="1733114875506" duration="4825000" />
+      <workItem from="1733114875506" duration="5160000" />
     </task>
     <task id="LOCAL-00001" summary="aoc(Tag 1)">
       <created>1669875481381</created>
@@ -676,7 +492,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733089112869</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="feat(02/24)">
+      <option name="closed" value="true" />
+      <created>1733119772512</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1733119772512</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -694,7 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="done(Task A &amp; B)" />
     <MESSAGE value="pretty(Day 3)" />
     <MESSAGE value="pretty(Day 4)" />
     <MESSAGE value="shortened(Task B)" />
@@ -719,7 +542,8 @@
     <MESSAGE value="feat(01/22)" />
     <MESSAGE value="feat(01/24)" />
     <MESSAGE value="fix(minor)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(minor)" />
+    <MESSAGE value="feat(02/24)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(02/24)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

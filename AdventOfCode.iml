@@ -26,6 +26,5 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="google.code.gson" level="project" />
-    <orderEntry type="module" module-name="helper" />
   </component>
 </module>
