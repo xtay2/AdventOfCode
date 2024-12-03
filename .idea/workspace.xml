@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(02/24)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day03/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day03/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day03/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day03/Task_B.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,6 @@
   <component name="GithubProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
-        <option value="master" />
         <option value="main" />
       </list>
     </option>
@@ -93,7 +94,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "19",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/x-tay/Documents/Programmierung/Java/AdventOfCode",
