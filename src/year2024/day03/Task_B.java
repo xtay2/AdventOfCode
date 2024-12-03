@@ -13,13 +13,13 @@ public class Task_B extends Task {
 
     @Override
     protected Object exec(AdventOfCode aoc) {
-        var res = Pattern.compile("mul\\((\\d+),(\\d+)\\)|do\\(\\)|don't\\(\\)")
+        var instructions = Pattern.compile("mul\\((\\d+),(\\d+)\\)|do\\(\\)|don't\\(\\)")
                 .matcher(aoc.inputTxt())
                 .results()
                 .toList();
         boolean doExec = true;
         int sum = 0;
-        for (var inst : res) {
+        for (var inst : instructions) {
             if (inst.group().equals("do()"))
                 doExec = true;
             else if (inst.group().equals("don't()"))
