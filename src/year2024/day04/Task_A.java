@@ -31,15 +31,13 @@ public class Task_A extends Task {
 
         int cnt = 0;
         for (int dir = 0; dir < 8; dir++) {
-            int charIdx, xOffset = x + dxs[dir], yOffset = y + dys[dir];
+            int charIdx;
             for (charIdx = 1; charIdx < len; charIdx++) {
+                int xOffset = x + charIdx * dxs[dir], yOffset = y + charIdx * dys[dir];
                 if (!inBounds(xOffset, yOffset))
                     break;
                 if (matrix[xOffset][yOffset] != search.charAt(charIdx))
                     break;
-
-                xOffset += dxs[dir];
-                yOffset += dys[dir];
             }
 
             if (charIdx == len)

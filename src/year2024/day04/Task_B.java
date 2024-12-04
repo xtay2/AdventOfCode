@@ -14,21 +14,22 @@ public class Task_B extends Task {
     String search = "MAS";
     int len = search.length();
 
-    boolean inBounds(int x, int y, int dx, int dy, int offset) { // @formatter:off
-        return  x + offset * dx >= 0 &&
-                x + offset * dx  < h &&
-                y + offset * dy >= 0 &&
-                y + offset * dy  < w &&
-                x                < h &&
-                y                < w;
+    boolean inBounds(int x, int y) { // @formatter:off
+        int h = matrix.length, w = matrix[0].length;
+        return  x <  h &&
+                x >= 0 &&
+                y <  w &&
+                y >= 0;
     } // @formatter:on
 
-    int matches(int x, int y, int dx, int dy, int offset) {
-        if (!inBounds(x, y, dx, dy, offset))
-            return 0;
+    int matches(int x, int y, int dx, int dy) {
         var matches = true;
-        for (int charIdx = 0; charIdx < len; charIdx++)
-            matches &= matrix[x + charIdx * dx][y + charIdx * dy] == search.charAt(charIdx);
+        for (int charIdx = 0; charIdx < len; charIdx++) {
+            int xOffset = x + charIdx * dx, yOffset = y + charIdx * dy;
+            if (!inBounds(xOffset, yOffset))
+                return 0;
+            matches &= matrix[xOffset][yOffset] == search.charAt(charIdx);
+        }
         return matches ? 1 : 0;
     }
 
@@ -41,10 +42,10 @@ public class Task_B extends Task {
         var cnt = 0;
         for (int x = 0; x < h; x++) {
             for (int y = 0; y < w; y++) { // @formatter:off
-                cnt += matches(x,          y,           1,  1, offset) * matches(x,          y + offset, 1, -1, offset);
-                cnt += matches(x,          y,           1,  1, offset) * matches(x + offset, y,         -1,  1, offset);
-                cnt += matches(x + offset, y + offset, -1, -1, offset) * matches(x,          y + offset, 1, -1, offset);
-                cnt += matches(x + offset, y + offset, -1, -1, offset) * matches(x + offset, y,         -1,  1, offset);
+                cnt += matches(x,          y,           1,  1) * matches(x,          y + offset, 1, -1);
+                cnt += matches(x,          y,           1,  1) * matches(x + offset, y,         -1,  1);
+                cnt += matches(x + offset, y + offset, -1, -1) * matches(x,          y + offset, 1, -1);
+                cnt += matches(x + offset, y + offset, -1, -1) * matches(x + offset, y,         -1,  1);
             } // @formatter:on
         }
         return cnt;
