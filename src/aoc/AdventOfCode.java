@@ -75,6 +75,15 @@ public class AdventOfCode {
     }
 
     /**
+     * Returns the input of the current task as a matrix of chars.
+     */
+    public char[][] inputMat() {
+        return inputStr()
+                .map(String::toCharArray)
+                .toArray(char[][]::new);
+    }
+
+    /**
      * Returns the input of the current task as an array of {@link Character}s.
      */
     public Character[] inputChars() {
