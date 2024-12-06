@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="pretty(04/2024)">
-      <change afterPath="$PROJECT_DIR$/src/year2024/day05/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2024/day05/Task_B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day06/Task_A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day06/Task_B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AdventOfCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AdventOfCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helper/src/helper/util/ArrayMatrixHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../helper/src/helper/util/ArrayMatrixHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,41 +106,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Task_A.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_B.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day01.Task_B.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day02.Task_A.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day02.Task_B.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day03.Task_A.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day04.Task_A.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;with-helper&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/x-tay/Documents/Programmierung/Java/AdventOfCode&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15429688&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Task_A (1).executor": "Run",
+    "Application.Task_A (2).executor": "Run",
+    "Application.Task_A (3).executor": "Run",
+    "Application.Task_A (4).executor": "Run",
+    "Application.Task_A (5).executor": "Run",
+    "Application.Task_A.executor": "Run",
+    "Application.Task_B (1).executor": "Run",
+    "Application.Task_B (2).executor": "Run",
+    "Application.Task_B (3).executor": "Run",
+    "Application.Task_B.executor": "Run",
+    "Application.year2024.day01.Task_B.executor": "Run",
+    "Application.year2024.day02.Task_A.executor": "Run",
+    "Application.year2024.day02.Task_B.executor": "Run",
+    "Application.year2024.day03.Task_A.executor": "Run",
+    "Application.year2024.day04.Task_A.executor": "Run",
+    "Application.year2024.day06.Task_A (1).executor": "Run",
+    "Application.year2024.day06.Task_A (2).executor": "Run",
+    "Application.year2024.day06.Task_A (3).executor": "Run",
+    "Application.year2024.day06.Task_A (4).executor": "Run",
+    "Application.year2024.day06.Task_A.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "with-helper",
+    "jdk.selected.JAVA_MODULE": "19",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/x-tay/Documents/Programmierung/Java/AdventOfCode",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15429688",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\x-tay\Documents\Programmierung\Java\AdventOfCode\src\year2023\day03" />
@@ -154,20 +167,59 @@
       <recent name="C:\Users\x-tay\Documents\Programmierung\Java\helper\src\main\java\helper\base" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="year2024.day06" />
       <recent name="year2024.day05" />
       <recent name="year2024.day04" />
       <recent name="year2024.day02" />
       <recent name="year2024.day01" />
-      <recent name="year2023.day05" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task_A">
+  <component name="RunManager" selected="Application.Task_A (1)">
+    <configuration name="Task_A (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day06.Task_A" />
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.day06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task_A (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day06.Task_A" />
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.day06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task_A (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day06.Task_A" />
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.day06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day05.Task_A" />
+      <option name="MAIN_CLASS_NAME" value="year2024.day06.Task_A" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2024.day05.*" />
+          <option name="PATTERN" value="year2024.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,12 +227,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day05.Task_B" />
+    <configuration name="Task_B (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day06.Task_B" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2024.day05.*" />
+          <option name="PATTERN" value="year2024.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,12 +240,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="year2024.day02.Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day02.Task_A" />
+    <configuration name="Task_B (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day06.Task_B" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2024.day02.*" />
+          <option name="PATTERN" value="year2024.day06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task_B (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day06.Task_B" />
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.day06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -207,32 +272,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="year2024.day02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="year2024.day02.Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day02.Task_B" />
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2024.day02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="year2024.day04.Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day04.Task_A" />
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2024.day04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -252,19 +291,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.Task_A (1)" />
+      <item itemvalue="Application.Task_B (1)" />
+      <item itemvalue="Application.Task_B (2)" />
+      <item itemvalue="Application.Task_B (3)" />
       <item itemvalue="Application.Task_A" />
-      <item itemvalue="Application.Task_B" />
-      <item itemvalue="Application.year2024.day04.Task_A" />
-      <item itemvalue="Application.year2024.day02.Task_A" />
-      <item itemvalue="Application.year2024.day02.Task_B" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task_A (1)" />
         <item itemvalue="Application.Task_A" />
-        <item itemvalue="Application.Task_B" />
-        <item itemvalue="Application.year2024.day02.Task_B" />
-        <item itemvalue="Application.year2024.day02.Task_A" />
-        <item itemvalue="Application.year2024.day04.Task_A" />
+        <item itemvalue="Application.Task_B (3)" />
+        <item itemvalue="Application.Task_B (2)" />
+        <item itemvalue="Application.Task_B (1)" />
       </list>
     </recent_temporary>
   </component>
