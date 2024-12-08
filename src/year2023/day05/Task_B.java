@@ -71,7 +71,6 @@ public class Task_B extends Task {
         for (long i : vals) if (i < out) out = i;
         for (long[] i : vals2) if (i[0] < out2) out2 = i[0];
 
-        System.out.println(out2);
         return out2;
     }
 }

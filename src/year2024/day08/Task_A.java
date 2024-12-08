@@ -54,7 +54,6 @@ public class Task_A extends Task {
                                 ? b.y - yDiff
                                 : b.y + yDiff
                 );
-                System.out.println(a + ", " + b + " => " + ant1 + " " + ant2);
                 antinodes.add(ant1);
                 antinodes.add(ant2);
             }
