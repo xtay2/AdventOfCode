@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="pretty(04/2024)">
-      <change afterPath="$PROJECT_DIR$/src/year2024/day07/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2024/day07/Task_B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/CharMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/IntMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/LongMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/Matrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day08/CharMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day08/Task_A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day08/Task_B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,6 +134,8 @@
     "Application.year2024.day06.Task_A (4).executor": "Run",
     "Application.year2024.day06.Task_A.executor": "Run",
     "Application.year2024.day07.Task_A.executor": "Run",
+    "Application.year2024.day08.Task_A.executor": "Run",
+    "Application.year2024.day08.Task_B.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -167,42 +175,16 @@
       <recent name="C:\Users\x-tay\Documents\Programmierung\Java\helper\src\main\java\helper\base" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="util" />
+      <recent name="year2024.day08" />
       <recent name="year2024.day07" />
       <recent name="year2024.day06" />
       <recent name="year2024.day05" />
-      <recent name="year2024.day04" />
-      <recent name="year2024.day02" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task_B">
+  <component name="RunManager" selected="Application.year2024.day08.Task_B">
     <configuration name="Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="year2024.day06.Task_A" />
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2024.day06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task_B (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day06.Task_B" />
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2024.day06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task_B (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day06.Task_B" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
@@ -240,6 +222,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="year2024.day08.Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day08.Task_A" />
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.day08.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="year2024.day08.Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day08.Task_B" />
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.day08.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="helper" />
       <method v="2">
@@ -252,19 +260,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.year2024.day08.Task_A" />
+      <item itemvalue="Application.year2024.day08.Task_B" />
       <item itemvalue="Application.Task_B" />
       <item itemvalue="Application.year2024.day07.Task_A" />
-      <item itemvalue="Application.Task_B (2)" />
-      <item itemvalue="Application.Task_B (3)" />
       <item itemvalue="Application.Task_A" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.year2024.day08.Task_B" />
+        <item itemvalue="Application.year2024.day08.Task_A" />
         <item itemvalue="Application.Task_B" />
         <item itemvalue="Application.year2024.day07.Task_A" />
         <item itemvalue="Application.Task_A" />
-        <item itemvalue="Application.Task_B (3)" />
-        <item itemvalue="Application.Task_B (2)" />
       </list>
     </recent_temporary>
   </component>
