@@ -2,6 +2,7 @@ package year2024.day08;
 
 import aoc.AdventOfCode;
 import aoc.Task;
+import util.CharMatrix;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -14,7 +15,7 @@ public class Task_A extends Task {
 
     @Override
     protected Object exec(AdventOfCode aoc) {
-        var matrix = new CharMatrix(aoc.inputMat());
+        var matrix = aoc.inputMat();
         var frequencies = matrix.map((x, y, c) -> {
                     if (Character.isDigit(c) || Character.isAlphabetic(c))
                         return new Frequency(x, y, c);

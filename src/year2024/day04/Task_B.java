@@ -2,6 +2,7 @@ package year2024.day04;
 
 import aoc.AdventOfCode;
 import aoc.Task;
+import util.CharMatrix;
 
 public class Task_B extends Task {
 
@@ -9,13 +10,12 @@ public class Task_B extends Task {
         new Task_B();
     }
 
-    char[][] matrix;
+    CharMatrix matrix;
     int h, w;
     String search = "MAS";
     int len = search.length();
 
     boolean inBounds(int x, int y) { // @formatter:off
-        int h = matrix.length, w = matrix[0].length;
         return  x <  h &&
                 x >= 0 &&
                 y <  w &&
@@ -28,7 +28,7 @@ public class Task_B extends Task {
             int xOffset = x + charIdx * dx, yOffset = y + charIdx * dy;
             if (!inBounds(xOffset, yOffset))
                 return 0;
-            matches &= matrix[xOffset][yOffset] == search.charAt(charIdx);
+            matches &= matrix.get(xOffset, yOffset) == search.charAt(charIdx);
         }
         return matches ? 1 : 0;
     }
@@ -36,8 +36,8 @@ public class Task_B extends Task {
     @Override
     protected Object exec(AdventOfCode aoc) {
         matrix = aoc.inputMat();
-        h = matrix.length;
-        w = matrix[0].length;
+        h = matrix.height();
+        w = matrix.width();
         var offset = len - 1;
         var cnt = 0;
         for (int x = 0; x < h; x++) {

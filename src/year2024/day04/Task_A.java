@@ -2,6 +2,7 @@ package year2024.day04;
 
 import aoc.AdventOfCode;
 import aoc.Task;
+import util.CharMatrix;
 
 public class Task_A extends Task {
 
@@ -9,13 +10,12 @@ public class Task_A extends Task {
         new Task_A();
     }
 
-    char[][] matrix;
+    CharMatrix matrix;
     int h, w;
     String search = "XMAS";
     int len = search.length();
 
     boolean inBounds(int x, int y) { // @formatter:off
-        int h = matrix.length, w = matrix[0].length;
         return  x <  h &&
                 x >= 0 &&
                 y <  w &&
@@ -23,7 +23,7 @@ public class Task_A extends Task {
     } // @formatter:on
 
     int matches(int x, int y) {
-        if (matrix[x][y] != search.charAt(0))
+        if (matrix.get(x, y) != search.charAt(0))
             return 0;
 
         int[] dxs = {-1, -1, -1, 0, 0, 1, 1, 1};
@@ -36,7 +36,7 @@ public class Task_A extends Task {
                 int xOffset = x + charIdx * dxs[dir], yOffset = y + charIdx * dys[dir];
                 if (!inBounds(xOffset, yOffset))
                     break;
-                if (matrix[xOffset][yOffset] != search.charAt(charIdx))
+                if (matrix.get(xOffset, yOffset) != search.charAt(charIdx))
                     break;
             }
 
@@ -50,8 +50,8 @@ public class Task_A extends Task {
     @Override
     protected Object exec(AdventOfCode aoc) {
         matrix = aoc.inputMat();
-        h = matrix.length;
-        w = matrix[0].length;
+        h = matrix.height();
+        w = matrix.width();
         var cnt = 0;
         for (int x = 0; x < h; x++) {
             for (int y = 0; y < w; y++)

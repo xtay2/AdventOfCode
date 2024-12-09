@@ -2,6 +2,7 @@ package year2024.day06;
 
 import aoc.AdventOfCode;
 import aoc.Task;
+import util.CharMatrix;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -13,14 +14,14 @@ public class Task_A extends Task {
     }
 
     Guard guard;
-    char[][] matrix;
+    CharMatrix matrix;
     int w, h;
 
     @Override
     protected Object exec(AdventOfCode aoc) {
         matrix = aoc.inputMat();
-        w = matrix[0].length;
-        h = matrix.length;
+        w = matrix.width();
+        h = matrix.height();
         guard = findGuard();
         guard.goWhileInMap();
         return guard.visited.size() + 1;
@@ -29,7 +30,7 @@ public class Task_A extends Task {
     private Guard findGuard() {
         for (int y = 0; y < h; y++) {
             for (int x = 0; x < w; x++) {
-                var rot = switch (matrix[y][x]) {
+                var rot = switch (matrix.get(x, y)) {
                     case '^' -> Rotation.UP;
                     case 'v' -> Rotation.DOWN;
                     case '<' -> Rotation.LEFT;
@@ -55,7 +56,7 @@ public class Task_A extends Task {
             this.x = x;
             this.y = y;
             this.rotation = rotation;
-            matrix[y][x] = '.';
+            matrix.set(x, y, '.');
         }
 
         void goWhileInMap() {
@@ -91,10 +92,10 @@ public class Task_A extends Task {
 
         boolean obstacleAhead() {
             return switch (rotation) {
-                case UP -> y - 1 >= 0 && matrix[y - 1][x] == '#';
-                case DOWN -> y + 1 < h && matrix[y + 1][x] == '#';
-                case LEFT -> x - 1 >= 0 && matrix[y][x - 1] == '#';
-                case RIGHT -> x + 1 < w && matrix[y][x + 1] == '#';
+                case UP -> y - 1 >= 0 && matrix.get(x, y - 1) == '#';
+                case DOWN -> y + 1 < h && matrix.get(x, y + 1) == '#';
+                case LEFT -> x - 1 >= 0 && matrix.get(x - 1, y) == '#';
+                case RIGHT -> x + 1 < w && matrix.get(x + 1, y) == '#';
             };
         }
 
