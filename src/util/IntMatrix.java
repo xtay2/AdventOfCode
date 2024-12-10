@@ -29,7 +29,7 @@ public class IntMatrix {
     }
 
     public void set(int x, int y, int val) {
-        if (isInBounds(x, y))
+        if (!isInBounds(x, y))
             throw new IllegalArgumentException("[" + x + ", " + y + "] is not in bounds.");
         matrix[y][x] = val;
     }

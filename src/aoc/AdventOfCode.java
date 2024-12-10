@@ -1,6 +1,7 @@
 package aoc;
 
 import util.CharMatrix;
+import util.IntMatrix;
 
 import java.io.IOException;
 import java.net.URI;
@@ -79,10 +80,21 @@ public class AdventOfCode {
     /**
      * Returns the input of the current task as a matrix of chars.
      */
-    public CharMatrix inputMat() {
+    public CharMatrix inputCharMat() {
         return new CharMatrix(inputStr()
                 .map(String::toCharArray)
                 .toArray(char[][]::new));
+    }
+
+    /**
+     * Interprets the input as an int-matrix of digits 0-9.
+     */
+    public IntMatrix inputIntMat() {
+        return inputCharMat().mapToInt((_, _, val) -> {
+            var res = val - '0';
+            assert 0 <= res && res <= 9;
+            return res;
+        });
     }
 
     /**
@@ -93,7 +105,7 @@ public class AdventOfCode {
     }
 
     /**
-     * Interprets the input as one continues int-array of digits 0-9.
+     * Interprets the input as one continuous int-array of digits 0-9.
      */
     public int[] inputInts() {
         var txt = inputTxt().strip();

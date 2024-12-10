@@ -35,7 +35,7 @@ public class Task_B extends Task {
 
     @Override
     protected Object exec(AdventOfCode aoc) {
-        matrix = aoc.inputMat();
+        matrix = aoc.inputCharMat();
         h = matrix.height();
         w = matrix.width();
         var offset = len - 1;

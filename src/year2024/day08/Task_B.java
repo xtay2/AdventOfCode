@@ -14,7 +14,7 @@ public class Task_B extends Task {
 
     @Override
     protected Object exec(AdventOfCode aoc) {
-        var matrix = aoc.inputMat();
+        var matrix = aoc.inputCharMat();
         var frequencies = matrix.map((x, y, c) -> {
                     if (Character.isDigit(c) || Character.isAlphabetic(c))
                         return new Frequency(x, y, c);

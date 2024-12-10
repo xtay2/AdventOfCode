@@ -19,7 +19,7 @@ public class Task_B extends Task {
 
     @Override
     protected Object exec(AdventOfCode aoc) {
-        matrix = aoc.inputMat();
+        matrix = aoc.inputCharMat();
         w = matrix.width();
         h = matrix.height();
         var cnt = 0;
@@ -30,7 +30,7 @@ public class Task_B extends Task {
                     guard = findGuard();
                     guard.goWhileNotInLoop();
                     if (guard.isInLoop()) {cnt++;}
-                    matrix = aoc.inputMat();
+                    matrix = aoc.inputCharMat();
                 }
             }
         }

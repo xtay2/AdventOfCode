@@ -19,7 +19,7 @@ public class Task_A extends Task {
 
     @Override
     protected Object exec(AdventOfCode aoc) {
-        matrix = aoc.inputMat();
+        matrix = aoc.inputCharMat();
         w = matrix.width();
         h = matrix.height();
         guard = findGuard();
