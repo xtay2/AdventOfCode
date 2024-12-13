@@ -11,22 +11,14 @@ public class Task_B extends Task {
     }
 
     CharMatrix matrix;
-    int h, w;
     String search = "MAS";
     int len = search.length();
-
-    boolean inBounds(int x, int y) { // @formatter:off
-        return  x <  h &&
-                x >= 0 &&
-                y <  w &&
-                y >= 0;
-    } // @formatter:on
 
     int matches(int x, int y, int dx, int dy) {
         var matches = true;
         for (int charIdx = 0; charIdx < len; charIdx++) {
             int xOffset = x + charIdx * dx, yOffset = y + charIdx * dy;
-            if (!inBounds(xOffset, yOffset))
+            if (!matrix.isInBounds(xOffset, yOffset))
                 return 0;
             matches &= matrix.get(xOffset, yOffset) == search.charAt(charIdx);
         }
@@ -36,18 +28,13 @@ public class Task_B extends Task {
     @Override
     protected Object exec(AdventOfCode aoc) {
         matrix = aoc.inputCharMat();
-        h = matrix.height();
-        w = matrix.width();
         var offset = len - 1;
-        var cnt = 0;
-        for (int x = 0; x < h; x++) {
-            for (int y = 0; y < w; y++) { // @formatter:off
-                cnt += matches(x,          y,           1,  1) * matches(x,          y + offset, 1, -1);
-                cnt += matches(x,          y,           1,  1) * matches(x + offset, y,         -1,  1);
-                cnt += matches(x + offset, y + offset, -1, -1) * matches(x,          y + offset, 1, -1);
-                cnt += matches(x + offset, y + offset, -1, -1) * matches(x + offset, y,         -1,  1);
-            } // @formatter:on
-        }
-        return cnt;
+        return matrix.map((x, y, _) ->  // @formatter:off
+                  matches(x,          y,           1,  1) * matches(x,          y + offset, 1, -1)
+                + matches(x,          y,           1,  1) * matches(x + offset, y,         -1,  1)
+                + matches(x + offset, y + offset, -1, -1) * matches(x,          y + offset, 1, -1)
+                + matches(x + offset, y + offset, -1, -1) * matches(x + offset, y,         -1,  1)
+                // @formatter:on
+        ).reduce(0, Integer::sum);
     }
 }

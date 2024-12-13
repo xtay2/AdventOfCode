@@ -3,8 +3,11 @@ package year2024.day06;
 import aoc.AdventOfCode;
 import aoc.Task;
 import util.CharMatrix;
+import util.Direction;
+import util.Point;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 public class Task_B extends Task {
@@ -38,35 +41,30 @@ public class Task_B extends Task {
     }
 
     private Guard findGuard() {
-        for (int y = 0; y < h; y++) {
-            for (int x = 0; x < w; x++) {
-                var rot = switch (matrix.get(x, y)) {
-                    case '^' -> Rotation.UP;
-                    case 'v' -> Rotation.DOWN;
-                    case '<' -> Rotation.LEFT;
-                    case '>' -> Rotation.RIGHT;
-                    default -> null;
-                };
-                if (rot != null)
-                    return new Guard(x, y, rot);
-            }
-        }
-        throw new AssertionError("No guard found");
+        return matrix.map((x, y, v) -> {
+            var rot = switch (v) {
+                case '^' -> Direction.UP;
+                case 'v' -> Direction.DOWN;
+                case '<' -> Direction.LEFT;
+                case '>' -> Direction.RIGHT;
+                default -> null;
+            };
+            if (rot != null)
+                return new Guard(new Point(x, y), rot);
+            return null;
+        }).filter(Objects::nonNull).findFirst().orElseThrow();
     }
-
-    enum Rotation {UP, DOWN, LEFT, RIGHT}
 
     class Guard {
 
         Set<GuardPos> visited = new HashSet<>();
-        int x, y;
-        Rotation rotation;
+        Point pos;
+        Direction direction;
 
-        Guard(int x, int y, Rotation rotation) {
-            this.x = x;
-            this.y = y;
-            this.rotation = rotation;
-            matrix.set(x, y, '.');
+        Guard(Point pos, Direction direction) {
+            this.pos = pos;
+            this.direction = direction;
+            matrix.set(pos, '.');
         }
 
         void goWhileNotInLoop() {
@@ -83,34 +81,25 @@ public class Task_B extends Task {
 
         void go() {
             visited.add(pos());
-            switch (rotation) {
-                case UP -> y--;
-                case DOWN -> y++;
-                case LEFT -> x--;
-                case RIGHT -> x++;
-            }
+            pos = pos.neighbour(direction);
         }
 
         void turn() {
-            rotation = switch (rotation) {
-                case UP -> Rotation.RIGHT;
-                case DOWN -> Rotation.LEFT;
-                case LEFT -> Rotation.UP;
-                case RIGHT -> Rotation.DOWN;
+            direction = switch (direction) {
+                case UP -> Direction.RIGHT;
+                case DOWN -> Direction.LEFT;
+                case LEFT -> Direction.UP;
+                case RIGHT -> Direction.DOWN;
             };
         }
 
         boolean obstacleAhead() {
-            return switch (rotation) {
-                case UP -> y - 1 >= 0 && matrix.get(x, y - 1) == '#';
-                case DOWN -> y + 1 < h && matrix.get(x, y + 1) == '#';
-                case LEFT -> x - 1 >= 0 && matrix.get(x - 1, y) == '#';
-                case RIGHT -> x + 1 < w && matrix.get(x + 1, y) == '#';
-            };
+            var nextPos = pos.neighbour(direction);
+            return matrix.isInBounds(nextPos) && matrix.get(nextPos) == '#';
         }
 
         boolean isOutOfMap() {
-            return x <= 0 || x >= w || y <= 0 || y >= h;
+            return !matrix.isInBounds(pos);
         }
 
         boolean isInLoop() {
@@ -118,15 +107,10 @@ public class Task_B extends Task {
         }
 
         GuardPos pos() {
-            return new GuardPos(x, y, rotation);
+            return new GuardPos(pos, direction);
         }
 
-        @Override
-        public String toString() {
-            return "Guard at [" + x + ", " + y + " | " + rotation + "]";
-        }
-
-        record GuardPos(int x, int y, Rotation rotation) {}
+        record GuardPos(Point pos, Direction rotation) {}
     }
 
 }

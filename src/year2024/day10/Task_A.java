@@ -3,13 +3,12 @@ package year2024.day10;
 import aoc.AdventOfCode;
 import aoc.Task;
 import util.IntMatrix;
+import util.Point;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Task_A extends Task {
 
@@ -21,29 +20,27 @@ public class Task_A extends Task {
     protected Object exec(AdventOfCode aoc) {
         var mat = aoc.inputIntMat();
         return mat.map((x, y, v) -> v == 0
-                        ? crossSearch(x, y, 0, mat)
+                        ? crossSearch(new Point(x, y), 0, mat)
                         : null
                 ).filter(Objects::nonNull)
                 .mapToInt(TrailPos::score)
                 .sum();
     }
 
-    TrailPos crossSearch(int x, int y, int currentVal, IntMatrix mat) {
-        var coords = mat.get(x, y);
+    TrailPos crossSearch(Point pos, int currentVal, IntMatrix mat) {
+        var coords = mat.get(pos);
         if (coords instanceof Integer i && i == currentVal) {
-            var adjacent = Stream.of(
-                    crossSearch(x + 1, y, currentVal + 1, mat),
-                    crossSearch(x, y + 1, currentVal + 1, mat),
-                    crossSearch(x - 1, y, currentVal + 1, mat),
-                    crossSearch(x, y - 1, currentVal + 1, mat)
-            ).filter(Objects::nonNull).toList();
-            return new TrailPos(x, y, currentVal, adjacent);
+            var adjacent = mat.neighbours(pos)
+                    .map(p -> crossSearch(p, currentVal + 1, mat))
+                    .filter(Objects::nonNull)
+                    .toList();
+            return new TrailPos(pos, currentVal, adjacent);
         }
         return null;
     }
 
 
-    record TrailPos(int x, int y, int val, List<TrailPos> adjacent) {
+    record TrailPos(Point pos, int val, List<TrailPos> adjacent) {
 
         int score() {
             return reachablePeaks().size();
@@ -60,7 +57,7 @@ public class Task_A extends Task {
 
         @Override
         public String toString() {
-            return "[" + x + ", " + y + "]: " + score() + (val == 0 ? "(" + reachablePeaks() + ")" : "");
+            return pos + ": " + score() + (val == 0 ? "(" + reachablePeaks() + ")" : "");
         }
     }
 

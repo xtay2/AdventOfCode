@@ -11,16 +11,9 @@ public class Task_A extends Task {
     }
 
     CharMatrix matrix;
-    int h, w;
     String search = "XMAS";
     int len = search.length();
 
-    boolean inBounds(int x, int y) { // @formatter:off
-        return  x <  h &&
-                x >= 0 &&
-                y <  w &&
-                y >= 0;
-    } // @formatter:on
 
     int matches(int x, int y) {
         if (matrix.get(x, y) != search.charAt(0))
@@ -34,7 +27,7 @@ public class Task_A extends Task {
             int charIdx;
             for (charIdx = 1; charIdx < len; charIdx++) {
                 int xOffset = x + charIdx * dxs[dir], yOffset = y + charIdx * dys[dir];
-                if (!inBounds(xOffset, yOffset))
+                if (!matrix.isInBounds(xOffset, yOffset))
                     break;
                 if (matrix.get(xOffset, yOffset) != search.charAt(charIdx))
                     break;
@@ -50,13 +43,7 @@ public class Task_A extends Task {
     @Override
     protected Object exec(AdventOfCode aoc) {
         matrix = aoc.inputCharMat();
-        h = matrix.height();
-        w = matrix.width();
-        var cnt = 0;
-        for (int x = 0; x < h; x++) {
-            for (int y = 0; y < w; y++)
-                cnt += matches(x, y);
-        }
-        return cnt;
+        return matrix.map((x, y, _) -> matches(x, y))
+                .reduce(0, Integer::sum);
     }
 }
