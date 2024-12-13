@@ -99,8 +99,7 @@ public class IntMatrix {
             return visited;
         visited.add(p);
         action.accept(p, val);
-        for (var neighbour : neighbours(p))
-            dfs(neighbour, inspect, action, visited);
+        neighbours(p).forEach(neighbour -> dfs(neighbour, inspect, action, visited));
         return visited;
     }
 
