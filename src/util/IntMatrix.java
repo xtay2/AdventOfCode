@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @SuppressWarnings("unused")
@@ -21,7 +20,7 @@ public class IntMatrix {
         this.matrix = matrix;
     }
 
-    public boolean isInBounds(Point p) {
+    public boolean isInBounds(IPoint p) {
         return isInBounds(p.x(), p.y());
     }
 
@@ -29,7 +28,7 @@ public class IntMatrix {
         return 0 <= x && x < width() && 0 <= y && y < height();
     }
 
-    public Integer get(Point p) {
+    public Integer get(IPoint p) {
         return get(p.x(), p.y());
     }
 
@@ -39,7 +38,7 @@ public class IntMatrix {
                 : null;
     }
 
-    public void set(Point p, int val) {
+    public void set(IPoint p, int val) {
         set(p.x(), p.y(), val);
     }
 
@@ -77,8 +76,8 @@ public class IntMatrix {
      * @param action  an action, performed after the check.
      * @return the visited points
      */
-    public Set<Point> dfs(int x, int y, CoordValIntPredicate inspect, CoordValIntConsumer action) {
-        return dfs(new Point(x, y), inspect, action);
+    public Set<IPoint> dfs(int x, int y, CoordValIntPredicate inspect, CoordValIntConsumer action) {
+        return dfs(new IPoint(x, y), inspect, action);
     }
 
     /**
@@ -89,11 +88,11 @@ public class IntMatrix {
      * @param action  an action, performed after the check.
      * @return the visited points
      */
-    public Set<Point> dfs(Point p, CoordValIntPredicate inspect, CoordValIntConsumer action) {
+    public Set<IPoint> dfs(IPoint p, CoordValIntPredicate inspect, CoordValIntConsumer action) {
         return Set.copyOf(dfs(p, inspect, action, new HashSet<>()));
     }
 
-    private Set<Point> dfs(Point p, CoordValIntPredicate inspect, CoordValIntConsumer action, Set<Point> visited) {
+    private Set<IPoint> dfs(IPoint p, CoordValIntPredicate inspect, CoordValIntConsumer action, Set<IPoint> visited) {
         var val = get(p);
         if (visited.contains(p) || !inspect.test(p, val))
             return visited;
@@ -103,11 +102,11 @@ public class IntMatrix {
         return visited;
     }
 
-    public Stream<Point> neighbours(int x, int y) {
-        return neighbours(new Point(x, y));
+    public Stream<IPoint> neighbours(int x, int y) {
+        return neighbours(new IPoint(x, y));
     }
 
-    public Stream<Point> neighbours(Point p) {
+    public Stream<IPoint> neighbours(IPoint p) {
         return p.neighbours().filter(this::isInBounds);
     }
 
@@ -143,7 +142,7 @@ public class IntMatrix {
     public interface CoordValIntConsumer {
         void accept(int x, int y, int val);
 
-        default void accept(Point p, int val) {
+        default void accept(IPoint p, int val) {
             accept(p.x(), p.y(), val);
         }
     }
@@ -152,7 +151,7 @@ public class IntMatrix {
     public interface CoordValIntFunction<T> {
         T apply(int x, int y, int val);
 
-        default T apply(Point p, int val) {
+        default T apply(IPoint p, int val) {
             return apply(p.x(), p.y(), val);
         }
     }
@@ -161,7 +160,7 @@ public class IntMatrix {
     public interface CoordValIntPredicate {
         boolean test(int x, int y, int val);
 
-        default boolean test(Point p, int val) {
+        default boolean test(IPoint p, int val) {
             return test(p.x(), p.y(), val);
         }
     }
@@ -170,7 +169,7 @@ public class IntMatrix {
     public interface CoordValIntToLongFunction {
         long apply(int x, int y, int val);
 
-        default long apply(Point p, int val) {
+        default long apply(IPoint p, int val) {
             return apply(p.x(), p.y(), val);
         }
     }

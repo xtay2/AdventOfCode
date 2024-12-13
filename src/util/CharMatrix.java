@@ -21,7 +21,7 @@ public class CharMatrix {
         this.matrix = matrix;
     }
 
-    public boolean isInBounds(Point p) {
+    public boolean isInBounds(IPoint p) {
         return isInBounds(p.x(), p.y());
     }
 
@@ -29,7 +29,7 @@ public class CharMatrix {
         return 0 <= x && x < width() && 0 <= y && y < height();
     }
 
-    public Character get(Point p) {
+    public Character get(IPoint p) {
         return get(p.x(), p.y());
     }
 
@@ -39,7 +39,7 @@ public class CharMatrix {
                 : null;
     }
 
-    public void set(Point p, char val) {
+    public void set(IPoint p, char val) {
         set(p.x(), p.y(), val);
     }
 
@@ -77,8 +77,8 @@ public class CharMatrix {
      * @param action  an action, performed after the check.
      * @return the visited points
      */
-    public Set<Point> dfs(int x, int y, CoordValCharPredicate inspect, CoordValCharConsumer action) {
-        return dfs(new Point(x, y), inspect, action);
+    public Set<IPoint> dfs(int x, int y, CoordValCharPredicate inspect, CoordValCharConsumer action) {
+        return dfs(new IPoint(x, y), inspect, action);
     }
 
     /**
@@ -89,11 +89,11 @@ public class CharMatrix {
      * @param action  an action, performed after the check.
      * @return the visited points
      */
-    public Set<Point> dfs(Point p, CoordValCharPredicate inspect, CoordValCharConsumer action) {
+    public Set<IPoint> dfs(IPoint p, CoordValCharPredicate inspect, CoordValCharConsumer action) {
         return Set.copyOf(dfs(p, inspect, action, new HashSet<>()));
     }
 
-    private Set<Point> dfs(Point p, CoordValCharPredicate inspect, CoordValCharConsumer action, Set<Point> visited) {
+    private Set<IPoint> dfs(IPoint p, CoordValCharPredicate inspect, CoordValCharConsumer action, Set<IPoint> visited) {
         var val = get(p);
         if (visited.contains(p) || !inspect.test(p, val))
             return visited;
@@ -104,11 +104,11 @@ public class CharMatrix {
         return visited;
     }
 
-    public Set<Point> neighbours(int x, int y) {
-        return neighbours(new Point(x, y));
+    public Set<IPoint> neighbours(int x, int y) {
+        return neighbours(new IPoint(x, y));
     }
 
-    public Set<Point> neighbours(Point p) {
+    public Set<IPoint> neighbours(IPoint p) {
         return p.neighbours().filter(this::isInBounds).collect(Collectors.toUnmodifiableSet());
     }
 
@@ -154,7 +154,7 @@ public class CharMatrix {
     public interface CoordValCharConsumer {
         void accept(int x, int y, char val);
 
-        default void accept(Point p, char val) {
+        default void accept(IPoint p, char val) {
             accept(p.x(), p.y(), val);
         }
     }
@@ -163,7 +163,7 @@ public class CharMatrix {
     public interface CoordValCharFunction<T> {
         T apply(int x, int y, char val);
 
-        default T apply(Point p, char val) {
+        default T apply(IPoint p, char val) {
             return apply(p.x(), p.y(), val);
         }
     }
@@ -172,7 +172,7 @@ public class CharMatrix {
     public interface CoordValCharPredicate {
         boolean test(int x, int y, char val);
 
-        default boolean test(Point p, char val) {
+        default boolean test(IPoint p, char val) {
             return test(p.x(), p.y(), val);
         }
     }
@@ -181,7 +181,7 @@ public class CharMatrix {
     public interface CoordValCharToIntFunction {
         int apply(int x, int y, char val);
 
-        default int apply(Point p, char val) {
+        default int apply(IPoint p, char val) {
             return apply(p.x(), p.y(), val);
         }
     }
@@ -190,7 +190,7 @@ public class CharMatrix {
     public interface CoordValCharToLongFunction {
         long apply(int x, int y, char val);
 
-        default long apply(Point p, char val) {
+        default long apply(IPoint p, char val) {
             return apply(p.x(), p.y(), val);
         }
     }

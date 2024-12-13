@@ -2,7 +2,7 @@ package year2024.day08;
 
 import aoc.AdventOfCode;
 import aoc.Task;
-import util.Point;
+import util.IPoint;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -32,14 +32,14 @@ public class Task_A extends Task {
                 .count();
     }
 
-    Set<Point> calcAntinodes(List<Frequency> frequencies) {
-        var antinodes = new HashSet<Point>();
+    Set<IPoint> calcAntinodes(List<Frequency> frequencies) {
+        var antinodes = new HashSet<IPoint>();
         for (var a : frequencies) {
             for (var b : frequencies) {
                 if (a.equals(b)) continue;
                 int xDiff = diff(a.x, b.x);
                 int yDiff = diff(a.y, b.y);
-                var ant1 = new Point(
+                var ant1 = new IPoint(
                         a.x <= b.x
                                 ? a.x - xDiff
                                 : a.x + xDiff,
@@ -47,7 +47,7 @@ public class Task_A extends Task {
                                 ? a.y - yDiff
                                 : a.y + yDiff
                 );
-                var ant2 = new Point(
+                var ant2 = new IPoint(
                         b.x <= a.x
                                 ? b.x - xDiff
                                 : b.x + xDiff,

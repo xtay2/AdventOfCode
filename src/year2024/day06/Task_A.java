@@ -4,7 +4,7 @@ import aoc.AdventOfCode;
 import aoc.Task;
 import util.CharMatrix;
 import util.Direction;
-import util.Point;
+import util.IPoint;
 
 import java.util.HashSet;
 import java.util.Objects;
@@ -31,7 +31,7 @@ public class Task_A extends Task {
                 default -> null;
             };
             if (rot != null)
-                return new Guard(new Point(x, y), rot);
+                return new Guard(new IPoint(x, y), rot);
             return null;
         }).filter(Objects::nonNull).findFirst().orElseThrow();
         guard.goWhileInMap();
@@ -40,11 +40,11 @@ public class Task_A extends Task {
 
     class Guard {
 
-        Set<Point> visited = new HashSet<>();
-        Point pos;
+        Set<IPoint> visited = new HashSet<>();
+        IPoint pos;
         Direction direction;
 
-        Guard(Point pos, Direction direction) {
+        Guard(IPoint pos, Direction direction) {
             this.pos = pos;
             this.direction = direction;
             matrix.set(pos, '.');
