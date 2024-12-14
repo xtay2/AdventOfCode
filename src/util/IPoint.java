@@ -1,5 +1,6 @@
 package util;
 
+import java.util.function.IntUnaryOperator;
 import java.util.stream.Stream;
 
 public record IPoint(int x, int y) implements Point {
@@ -51,11 +52,26 @@ public record IPoint(int x, int y) implements Point {
         return "[" + x + ", " + y + "]";
     }
 
-    public Point plus(Point p) {
-        return switch (p) {
+    public IPoint times(int n) {
+        return new IPoint(x * n, y * n);
+    }
+
+
+    public <T extends Point> T plus(T p) {
+        return (T) switch (p) {
             case IPoint(var ix, var iy) -> new IPoint(x + ix, y + iy);
             case LPoint(var lx, var ly) -> new LPoint(x + lx, y + ly);
         };
     }
 
+    public <T extends Point> T modulo(T p) {
+        return (T) switch (p) {
+            case IPoint(var ix, var iy) -> new IPoint(x % ix, y % iy);
+            case LPoint(var lx, var ly) -> new LPoint(x % lx, y % ly);
+        };
+    }
+
+    public IPoint map(IntUnaryOperator fx, IntUnaryOperator fy) {
+        return new IPoint(fx.applyAsInt(x), fy.applyAsInt(y));
+    }
 }

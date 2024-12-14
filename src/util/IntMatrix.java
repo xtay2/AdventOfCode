@@ -138,6 +138,14 @@ public class IntMatrix {
         return mat;
     }
 
+    @Override
+    public String toString() {
+        var sb = new StringBuilder();
+        for (var line : matrix)
+            sb.append(Arrays.toString(line)).append("\n");
+        return sb.toString();
+    }
+
     @FunctionalInterface
     public interface CoordValIntConsumer {
         void accept(int x, int y, int val);
@@ -173,5 +181,4 @@ public class IntMatrix {
             return apply(p.x(), p.y(), val);
         }
     }
-
 }

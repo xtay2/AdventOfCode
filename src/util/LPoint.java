@@ -62,4 +62,15 @@ public record LPoint(long x, long y) implements Point {
         };
     }
 
+    public LPoint modulo(Point p) {
+        return switch (p) {
+            case IPoint(var ix, var iy) -> new LPoint(x % ix, y % iy);
+            case LPoint(var lx, var ly) -> new LPoint(x % lx, y % ly);
+        };
+    }
+
+    public LPoint times(long n) {
+        return new LPoint(x * n, y * n);
+    }
+
 }

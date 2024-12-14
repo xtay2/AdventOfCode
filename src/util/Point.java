@@ -16,6 +16,4 @@ public sealed interface Point permits IPoint, LPoint {
 
     Stream<? extends Point> surrounding();
 
-    Point plus(Point p);
-
 }
