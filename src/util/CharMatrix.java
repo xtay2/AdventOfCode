@@ -120,6 +120,17 @@ public class CharMatrix {
         }
     }
 
+    public Stream<CoordValChar> stream() {
+        var strBuilder = Stream.<CoordValChar>builder();
+        for (int y = 0; y < height(); y++) {
+            for (int x = 0; x < width(); x++) {
+                strBuilder.add(new CoordValChar(x, y, get(x, y)));
+            }
+        }
+        return strBuilder.build();
+    }
+
+    @Deprecated
     public <U> Stream<U> map(CoordValCharFunction<U> function) {
         var lst = new ArrayList<U>();
         for (int y = 0; y < height(); y++) {
@@ -148,6 +159,21 @@ public class CharMatrix {
             }
         }
         return mat;
+    }
+
+    @Override
+    public String toString() {
+        var sb = new StringBuilder();
+        for (var line : matrix)
+            sb.append(Arrays.toString(line)).append("\n");
+        return sb.toString();
+    }
+
+    public IPoint findFirst(char s) {
+        return stream().filter((cvc) -> cvc.val() == s)
+                .findFirst()
+                .map(CharMatrix.CoordValChar::pos)
+                .orElse(null);
     }
 
     @FunctionalInterface
@@ -195,12 +221,10 @@ public class CharMatrix {
         }
     }
 
-    @Override
-    public String toString() {
-        var sb = new StringBuilder();
-        for (var line : matrix)
-            sb.append(Arrays.toString(line)).append("\n");
-        return sb.toString();
+    public record CoordValChar(int x, int y, char val) {
+        public IPoint pos() {
+            return new IPoint(x, y);
+        }
     }
 
 }
