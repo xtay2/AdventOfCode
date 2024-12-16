@@ -195,4 +195,12 @@ public class CharMatrix {
         }
     }
 
+    @Override
+    public String toString() {
+        var sb = new StringBuilder();
+        for (var line : matrix)
+            sb.append(Arrays.toString(line)).append("\n");
+        return sb.toString();
+    }
+
 }
