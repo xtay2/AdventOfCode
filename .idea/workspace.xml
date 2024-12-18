@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(16/12)">
-      <change afterPath="$PROJECT_DIR$/src/year2024/day17/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2024/day17/Task_B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day18/Task_A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day18/Task_B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/CharMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/CharMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/IPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/IPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/LPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/LPoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="with-helper" />
-                    <option name="lastUsedInstant" value="1734437236" />
+                    <option name="lastUsedInstant" value="1734497636" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
@@ -74,66 +76,66 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Task.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_A (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_A (2).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_A (3).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_A (4).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_A (5).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_A.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_B (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_B (2).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_B (3).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_B (4).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_B (5).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Task_B.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day04.Task_A.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day04.Task_B.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day06.Task_A (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day06.Task_A.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day06.Task_B.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day11.Task_A.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day11.Task_B.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day12.Task_A.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day13.Task_A.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day13.Task_B.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day14.Task_A.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day14.Task_B.executor&quot;: &quot;Run&quot;,
-    &quot;Application.year2024.day17.Task_A.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;with-helper&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/x-tay/Documents/Programmierung/Java/AdventOfCode&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Task.executor": "Run",
+    "Application.Task_A (1).executor": "Run",
+    "Application.Task_A (2).executor": "Run",
+    "Application.Task_A (3).executor": "Run",
+    "Application.Task_A (4).executor": "Run",
+    "Application.Task_A (5).executor": "Run",
+    "Application.Task_A.executor": "Run",
+    "Application.Task_B (1).executor": "Run",
+    "Application.Task_B (2).executor": "Run",
+    "Application.Task_B (3).executor": "Run",
+    "Application.Task_B (4).executor": "Run",
+    "Application.Task_B (5).executor": "Run",
+    "Application.Task_B.executor": "Run",
+    "Application.year2024.day04.Task_A.executor": "Run",
+    "Application.year2024.day04.Task_B.executor": "Run",
+    "Application.year2024.day06.Task_A (1).executor": "Run",
+    "Application.year2024.day06.Task_A.executor": "Run",
+    "Application.year2024.day06.Task_B.executor": "Run",
+    "Application.year2024.day11.Task_A.executor": "Run",
+    "Application.year2024.day11.Task_B.executor": "Run",
+    "Application.year2024.day12.Task_A.executor": "Run",
+    "Application.year2024.day13.Task_A.executor": "Run",
+    "Application.year2024.day13.Task_B.executor": "Run",
+    "Application.year2024.day14.Task_A.executor": "Run",
+    "Application.year2024.day14.Task_B.executor": "Run",
+    "Application.year2024.day17.Task_A.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "with-helper",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/x-tay/Documents/Programmierung/Java/AdventOfCode",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="year2024.day18" />
       <recent name="year2024.day17" />
       <recent name="year2024.day16" />
       <recent name="year2024.day15" />
       <recent name="year2024.day14" />
-      <recent name="util" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Task_B">
-    <configuration name="Task_B (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day17.Task_B" />
+    <configuration name="Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day18.Task_A" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2024.day17.*" />
+          <option name="PATTERN" value="year2024.day18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -181,11 +183,11 @@
       </method>
     </configuration>
     <configuration name="Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day17.Task_B" />
+      <option name="MAIN_CLASS_NAME" value="year2024.day18.Task_B" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2024.day17.*" />
+          <option name="PATTERN" value="year2024.day18.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,10 +198,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Task_B" />
+        <item itemvalue="Application.Task_A" />
         <item itemvalue="Application.Task_B (4)" />
-        <item itemvalue="Application.Task_B (2)" />
-        <item itemvalue="Application.Task_B (1)" />
         <item itemvalue="Application.Task_B (3)" />
+        <item itemvalue="Application.Task_B (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -282,5 +284,20 @@
     <MESSAGE value="feat(14/12)" />
     <MESSAGE value="feat(16/12)" />
     <option name="LAST_COMMIT_MESSAGE" value="feat(16/12)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/util/CharMatrix.java</url>
+          <line>141</line>
+          <properties class="util.CharMatrix" method="shortestPath">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

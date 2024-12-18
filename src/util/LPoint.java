@@ -4,6 +4,12 @@ import java.util.stream.Stream;
 
 public record LPoint(long x, long y) implements Point {
 
+    /** Parse the expression "x,y" into a point. */
+    public static LPoint fromCSV(String csv) {
+        var split = csv.split(",");
+        return new LPoint(Long.parseLong(split[0]), Long.parseLong(split[1]));
+    }
+
     public LPoint up() {
         return new LPoint(x, y - 1);
     }
