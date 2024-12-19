@@ -125,6 +125,7 @@ public class CharMatrix implements Cloneable {
      * @param x2      the target x coordinate
      * @param y2      the target y coordinate
      * @param inspect predicate that returns true if the passed coord should get visited.
+     * @param action  an action, performed after the check.
      * @return the visited points on the shortest path or {@code null} if no path was found.
      */
     public SequencedSet<IPoint> shortestPath(int x1, int y1, int x2, int y2, CoordValCharPredicate inspect, CoordValCharConsumer action) {
@@ -137,6 +138,7 @@ public class CharMatrix implements Cloneable {
      * @param start   the starting coordinates
      * @param end     the target coordinates
      * @param inspect predicate that returns true if the passed coord should get visited.
+     * @param action  an action, performed after the check.
      * @return the visited points on the shortest path or {@code null} if no path was found.
      */
     public SequencedSet<IPoint> shortestPath(IPoint start, IPoint end, CoordValCharPredicate inspect, CoordValCharConsumer action) {
@@ -160,14 +162,13 @@ public class CharMatrix implements Cloneable {
             var current = queue.poll();
             var currentPoint = current.point();
 
-            if (visited.contains(currentPoint)) {
+            if (visited.contains(currentPoint))
                 continue;
-            }
             visited.add(currentPoint);
 
             if (currentPoint.equals(end)) {
                 SequencedSet<IPoint> path = new LinkedHashSet<>();
-                for (IPoint at = end; at != null; at = previous.get(at)) {
+                for (var at = end; at != null; at = previous.get(at)) {
                     path.addFirst(at);
                 }
                 return path;

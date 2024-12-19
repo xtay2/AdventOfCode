@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(16/12)">
-      <change afterPath="$PROJECT_DIR$/src/year2024/day18/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2024/day18/Task_B.java" afterDir="false" />
+    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(18/12)">
+      <change afterPath="$PROJECT_DIR$/src/year2024/day19/Task_A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day19/Task_B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/CharMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/CharMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/IPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/IPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/LPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/LPoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +44,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="with-helper" />
-                    <option name="lastUsedInstant" value="1734497636" />
+                    <option name="lastUsedInstant" value="1734504603" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1733806439" />
+                    <option name="lastUsedInstant" value="1734504558" />
                   </RecentBranch>
                 </list>
               </option>
@@ -104,6 +102,8 @@
     "Application.year2024.day14.Task_A.executor": "Run",
     "Application.year2024.day14.Task_B.executor": "Run",
     "Application.year2024.day17.Task_A.executor": "Run",
+    "Application.year2024.day19.Task_A.executor": "Run",
+    "Application.year2024.day19.Task_B.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "with-helper",
@@ -122,27 +122,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="year2024.day18" />
+      <recent name="year2024.day19" />
       <recent name="year2024.day17" />
       <recent name="year2024.day16" />
       <recent name="year2024.day15" />
       <recent name="year2024.day14" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task_B">
-    <configuration name="Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day18.Task_A" />
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2024.day18.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.year2024.day19.Task_B">
     <configuration name="Task_B (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="year2024.day17.Task_B" />
       <module name="AdventOfCode" />
@@ -182,12 +169,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day18.Task_B" />
+    <configuration name="year2024.day19.Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day19.Task_A" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2024.day18.*" />
+          <option name="PATTERN" value="year2024.day19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="year2024.day19.Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day19.Task_B" />
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.day19.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,8 +197,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Task_B" />
-        <item itemvalue="Application.Task_A" />
+        <item itemvalue="Application.year2024.day19.Task_B" />
+        <item itemvalue="Application.year2024.day19.Task_A" />
         <item itemvalue="Application.Task_B (4)" />
         <item itemvalue="Application.Task_B (3)" />
         <item itemvalue="Application.Task_B (2)" />
@@ -235,6 +235,8 @@
       <workItem from="1734324951905" duration="97000" />
       <workItem from="1734437230481" duration="9162000" />
       <workItem from="1734446635623" duration="4578000" />
+      <workItem from="1734525739177" duration="630000" />
+      <workItem from="1734584178353" duration="1886000" />
     </task>
     <task id="LOCAL-00001" summary="feat(12/12)">
       <option name="closed" value="true" />
@@ -260,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734329189919</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat(18/12)">
+      <option name="closed" value="true" />
+      <created>1734504479585</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734504479585</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,21 +293,14 @@
     <MESSAGE value="fix(minor)" />
     <MESSAGE value="feat(14/12)" />
     <MESSAGE value="feat(16/12)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(16/12)" />
+    <MESSAGE value="feat(18/12)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(18/12)" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/util/CharMatrix.java</url>
-          <line>141</line>
-          <properties class="util.CharMatrix" method="shortestPath">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="cache" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
