@@ -22,7 +22,7 @@ public class CharMatrix implements Cloneable {
     @Override
     @SuppressWarnings({"All"})
     public CharMatrix clone() {
-        return new CharMatrix(matrix.clone());
+        return new CharMatrix(Arrays.stream(matrix).map(el -> el.clone()).toArray(char[][]::new));
     }
 
     public boolean isInBounds(IPoint p) {

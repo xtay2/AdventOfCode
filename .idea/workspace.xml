@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(18/12)">
-      <change afterPath="$PROJECT_DIR$/src/year2024/day19/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2024/day19/Task_B.java" afterDir="false" />
+    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(19/12)">
+      <change afterPath="$PROJECT_DIR$/src/year2024/day20/Task_A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day20/Task_B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/CharMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/CharMatrix.java" afterDir="false" />
     </list>
@@ -44,7 +44,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="with-helper" />
-                    <option name="lastUsedInstant" value="1734504603" />
+                    <option name="lastUsedInstant" value="1734670532" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
@@ -122,33 +122,20 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="year2024.day20" />
       <recent name="year2024.day19" />
       <recent name="year2024.day17" />
       <recent name="year2024.day16" />
       <recent name="year2024.day15" />
-      <recent name="year2024.day14" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.year2024.day19.Task_B">
-    <configuration name="Task_B (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day17.Task_B" />
+  <component name="RunManager" selected="Application.Task_B">
+    <configuration name="Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day20.Task_A" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2024.day17.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task_B (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day17.Task_B" />
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2024.day17.*" />
+          <option name="PATTERN" value="year2024.day20.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,6 +149,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="year2024.day17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day20.Task_B" />
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.day20.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -197,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task_B" />
+        <item itemvalue="Application.Task_A" />
         <item itemvalue="Application.year2024.day19.Task_B" />
         <item itemvalue="Application.year2024.day19.Task_A" />
         <item itemvalue="Application.Task_B (4)" />
-        <item itemvalue="Application.Task_B (3)" />
-        <item itemvalue="Application.Task_B (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -237,6 +237,8 @@
       <workItem from="1734446635623" duration="4578000" />
       <workItem from="1734525739177" duration="630000" />
       <workItem from="1734584178353" duration="1886000" />
+      <workItem from="1734608823689" duration="447000" />
+      <workItem from="1734670399557" duration="5416000" />
     </task>
     <task id="LOCAL-00001" summary="feat(12/12)">
       <option name="closed" value="true" />
