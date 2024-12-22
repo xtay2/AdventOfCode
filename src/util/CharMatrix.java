@@ -191,6 +191,69 @@ public class CharMatrix implements Cloneable {
         return null; // No path found
     }
 
+    public Set<SequencedSet<IPoint>> shortestPaths(IPoint start, IPoint end, CoordValCharPredicate inspect) {
+        record Node(IPoint point, int distance) {}
+        PriorityQueue<Node> queue = new PriorityQueue<>(Comparator.comparingInt(node -> node.distance));
+        Map<IPoint, Integer> distances = new HashMap<>();
+        Map<IPoint, List<IPoint>> previous = new HashMap<>();
+        Set<IPoint> visited = new HashSet<>();
+
+        queue.add(new Node(start, 0));
+        distances.put(start, 0);
+
+        while (!queue.isEmpty()) {
+            var current = queue.poll();
+            var currentPoint = current.point();
+
+            if (visited.contains(currentPoint))
+                continue;
+            visited.add(currentPoint);
+
+            if (currentPoint.equals(end)) {
+                break;
+            }
+
+            for (IPoint neighbor : neighbours(currentPoint).toList()) {
+                if (!inspect.test(neighbor, get(neighbor))) {
+                    continue;
+                }
+
+                int newDist = distances.get(currentPoint) + 1;
+                if (newDist < distances.getOrDefault(neighbor, Integer.MAX_VALUE)) {
+                    distances.put(neighbor, newDist);
+                    previous.put(neighbor, new ArrayList<>(List.of(currentPoint)));
+                    queue.add(new Node(neighbor, newDist));
+                } else if (newDist == distances.get(neighbor)) {
+                    previous.get(neighbor).add(currentPoint);
+                }
+            }
+        }
+
+        Set<SequencedSet<IPoint>> paths = new HashSet<>();
+        if (!distances.containsKey(end)) {
+            return paths; // No path found
+        }
+
+        Deque<IPoint> stack = new ArrayDeque<>();
+        stack.push(end);
+        buildPaths(end, start, previous, stack, paths);
+        return paths;
+    }
+
+    private void buildPaths(IPoint current, IPoint start, Map<IPoint, List<IPoint>> previous, Deque<IPoint> stack, Set<SequencedSet<IPoint>> paths) {
+        if (current.equals(start)) {
+            SequencedSet<IPoint> path = new LinkedHashSet<>(stack);
+            paths.add(path);
+            return;
+        }
+
+        for (IPoint prev : previous.getOrDefault(current, Collections.emptyList())) {
+            stack.push(prev);
+            buildPaths(prev, start, previous, stack, paths);
+            stack.pop();
+        }
+    }
+
     public Stream<IPoint> neighbours(int x, int y) {
         return neighbours(new IPoint(x, y));
     }

@@ -29,4 +29,14 @@ public enum Direction {
             case RIGHT -> UP;
         };
     }
+
+    public char toChar() {
+        return switch (this) {
+            case UP -> '^';
+            case DOWN -> 'v';
+            case LEFT -> '<';
+            case RIGHT -> '>';
+        };
+    }
+
 }

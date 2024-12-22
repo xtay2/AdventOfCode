@@ -5,7 +5,9 @@ import java.util.stream.Stream;
 
 public record IPoint(int x, int y) implements Point {
 
-    /** Parse the expression "x,y" into a point. */
+    /**
+     * Parse the expression "x,y" into a point.
+     */
     public static IPoint fromCSV(String csv) {
         var split = csv.split(",");
         return new IPoint(Integer.parseInt(split[0]), Integer.parseInt(split[1]));
@@ -38,6 +40,18 @@ public record IPoint(int x, int y) implements Point {
 
     public Stream<IPoint> neighbours() {
         return Stream.of(up(), down(), left(), right());
+    }
+
+    public Direction neighbourAt(IPoint p) {
+        if (up().equals(p))
+            return Direction.UP;
+        if (down().equals(p))
+            return Direction.DOWN;
+        if (left().equals(p))
+            return Direction.LEFT;
+        if (right().equals(p))
+            return Direction.RIGHT;
+        return null;
     }
 
     public Stream<IPoint> surrounding() {
