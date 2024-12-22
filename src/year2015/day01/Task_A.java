@@ -3,7 +3,7 @@ package year2015.day01;
 import aoc.AdventOfCode;
 import aoc.Task;
 
-import static helper.base.text.StringHelper.occ;
+import static helper.base.StringHelper.occ;
 
 
 public class Task_A extends Task {

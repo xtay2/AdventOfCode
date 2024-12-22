@@ -2,7 +2,7 @@ package year2023.day01;
 
 import aoc.AdventOfCode;
 import aoc.Task;
-import helper.base.text.StringHelper;
+import helper.base.StringHelper;
 
 import java.util.List;
 

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import static helper.base.text.StringHelper.occ;
+import static helper.base.StringHelper.occ;
 import static java.lang.Math.min;
 import static java.lang.String.join;
 import static java.util.Arrays.stream;

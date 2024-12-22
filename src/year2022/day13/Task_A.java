@@ -8,7 +8,7 @@ import helper.util.datastructures.tuples.Tuple;
 import java.util.ArrayList;
 import java.util.List;
 
-import static helper.base.text.StringHelper.occ;
+import static helper.base.StringHelper.occ;
 import static helper.util.StreamHelper.mapIndexed;
 import static java.lang.Math.min;
 import static java.util.Arrays.stream;
