@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(22/12)">
-      <change afterPath="$PROJECT_DIR$/src/year2024/day21/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2024/day21/Task_B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day23/Task_A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day23/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/CharMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/CharMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Direction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/util/IPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/IPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/LPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/LPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2015/day01/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2015/day01/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day13/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day13/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2022/day13/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2022/day13/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2023/day01/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2023/day01/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2023/day01/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2023/day01/Task_B.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +97,8 @@
     "Application.Task_B (4).executor": "Run",
     "Application.Task_B (5).executor": "Run",
     "Application.Task_B.executor": "Run",
+    "Application.year2023.day01.Task_A.executor": "Run",
+    "Application.year2023.day01.Task_B.executor": "Run",
     "Application.year2024.day04.Task_A.executor": "Run",
     "Application.year2024.day04.Task_B.executor": "Run",
     "Application.year2024.day06.Task_A (1).executor": "Run",
@@ -111,10 +118,11 @@
     "Application.year2024.day21.Task_B.executor": "Run",
     "Application.year2024.day22.Task_A.executor": "Run",
     "Application.year2024.day22.Task_B.executor": "Run",
+    "Application.year2024.day23.Task_B.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "with-helper",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/PC/Documents/Programmierung/Projects/Java/AdventOfCode",
     "node.js.detected.package.eslint": "true",
@@ -124,26 +132,39 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="year2024.day23" />
       <recent name="year2024.day21" />
       <recent name="year2024.day22" />
       <recent name="year2024.day20" />
       <recent name="year2024.day19" />
-      <recent name="year2024.day17" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.year2024.day21.Task_B">
+  <component name="RunManager" selected="Application.year2024.day23.Task_B">
+    <configuration name="Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day23.Task_A" />
+      <module name="AdventOfCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2024.day23.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day20.Task_B" />
+      <option name="MAIN_CLASS_NAME" value="year2022.day13.Task_B" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2024.day20.*" />
+          <option name="PATTERN" value="year2022.day13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,12 +172,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="year2024.day21.Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day21.Task_A" />
+    <configuration name="year2023.day01.Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2023.day01.Task_A" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2024.day21.*" />
+          <option name="PATTERN" value="year2023.day01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,12 +185,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="year2024.day21.Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day21.Task_B" />
+    <configuration name="year2023.day01.Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2023.day01.Task_B" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2024.day21.*" />
+          <option name="PATTERN" value="year2023.day01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -177,25 +198,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="year2024.day22.Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day22.Task_A" />
+    <configuration name="year2024.day23.Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2024.day23.Task_B" />
       <module name="AdventOfCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="year2024.day22.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="year2024.day22.Task_B" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="year2024.day22.Task_B" />
-      <module name="AdventOfCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="year2024.day22.*" />
+          <option name="PATTERN" value="year2024.day23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -205,10 +213,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.year2024.day21.Task_B" />
-        <item itemvalue="Application.year2024.day21.Task_A" />
-        <item itemvalue="Application.year2024.day22.Task_B" />
-        <item itemvalue="Application.year2024.day22.Task_A" />
+        <item itemvalue="Application.year2024.day23.Task_B" />
+        <item itemvalue="Application.Task_A" />
+        <item itemvalue="Application.year2023.day01.Task_B" />
+        <item itemvalue="Application.year2023.day01.Task_A" />
         <item itemvalue="Application.Task_B" />
       </list>
     </recent_temporary>
@@ -312,6 +320,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../../../Libraries/Java/helper" />
+    </ignored-roots>
     <MESSAGE value="feat(10/12)" />
     <MESSAGE value="feat(12/12)" />
     <MESSAGE value="fix(minor)" />
@@ -327,5 +338,9 @@
         <watch expression="cache" language="JAVA" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

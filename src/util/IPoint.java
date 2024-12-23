@@ -5,9 +5,7 @@ import java.util.stream.Stream;
 
 public record IPoint(int x, int y) implements Point {
 
-    /**
-     * Parse the expression "x,y" into a point.
-     */
+    /** Parse the expression "x,y" into a point. */
     public static IPoint fromCSV(String csv) {
         var split = csv.split(",");
         return new IPoint(Integer.parseInt(split[0]), Integer.parseInt(split[1]));
@@ -42,7 +40,7 @@ public record IPoint(int x, int y) implements Point {
         return Stream.of(up(), down(), left(), right());
     }
 
-    public Direction neighbourAt(IPoint p) {
+    public Direction neighbourAt(Point p) {
         if (up().equals(p))
             return Direction.UP;
         if (down().equals(p))
@@ -93,5 +91,19 @@ public record IPoint(int x, int y) implements Point {
 
     public IPoint map(IntUnaryOperator fx, IntUnaryOperator fy) {
         return new IPoint(fx.applyAsInt(x), fy.applyAsInt(y));
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return switch (obj) {
+            case IPoint p -> x == p.x() && y == p.y();
+            case LPoint p -> x == p.x() && y == p.y();
+            default -> false;
+        };
+    }
+
+    @Override
+    public int hashCode() {
+        return x * 31 + y;
     }
 }

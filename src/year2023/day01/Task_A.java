@@ -2,7 +2,6 @@ package year2023.day01;
 
 import aoc.AdventOfCode;
 import aoc.Task;
-import helper.base.StringHelper;
 
 import java.util.regex.MatchResult;
 import java.util.regex.Pattern;

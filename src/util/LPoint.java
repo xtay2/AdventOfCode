@@ -39,6 +39,18 @@ public record LPoint(long x, long y) implements Point {
         return Stream.of(up(), down(), left(), right());
     }
 
+    public Direction neighbourAt(Point p) {
+        if (up().equals(p))
+            return Direction.UP;
+        if (down().equals(p))
+            return Direction.DOWN;
+        if (left().equals(p))
+            return Direction.LEFT;
+        if (right().equals(p))
+            return Direction.RIGHT;
+        return null;
+    }
+
     public Stream<LPoint> surrounding() {
         return Stream.concat(neighbours(), Stream.of(
                 new LPoint(x - 1, y - 1),
@@ -79,4 +91,17 @@ public record LPoint(long x, long y) implements Point {
         return new LPoint(x * n, y * n);
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        return switch (obj) {
+            case IPoint p -> x == p.x() && y == p.y();
+            case LPoint p -> x == p.x() && y == p.y();
+            default -> false;
+        };
+    }
+
+    @Override
+    public int hashCode() {
+        return (int) x * 31 + (int) y;
+    }
 }
