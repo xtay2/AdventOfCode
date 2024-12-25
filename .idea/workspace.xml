@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(21/12)">
-      <change afterPath="$PROJECT_DIR$/src/year2024/day24/Task_A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2024/day25/Task_A.java" afterDir="false" />
+    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(24 &amp; 25 A)">
+      <change afterPath="$PROJECT_DIR$/src/util/Quadrupel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/Quintupel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/Triple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/Tuple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/year2024/day24/Task_B.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aoc/AdventOfCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aoc/AdventOfCode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +20,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -133,14 +135,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="year2024.day25" />
+      <recent name="util" />
       <recent name="year2024.day24" />
+      <recent name="year2024.day25" />
       <recent name="year2024.day23" />
       <recent name="year2024.day21" />
-      <recent name="year2024.day22" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.year2024.day25.Task_A">
+  <component name="RunManager" selected="Application.Task_B">
     <configuration name="Task_A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="year2024.day23.Task_A" />
       <module name="AdventOfCode" />
@@ -208,8 +210,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.year2024.day25.Task_A" />
         <item itemvalue="Application.Task_B" />
+        <item itemvalue="Application.year2024.day25.Task_A" />
         <item itemvalue="Application.year2024.day24.Task_A" />
         <item itemvalue="Application.year2024.day23.Task_B" />
         <item itemvalue="Application.Task_A" />
@@ -259,7 +261,8 @@
       <workItem from="1735017682444" duration="13473000" />
       <workItem from="1735031510633" duration="5878000" />
       <workItem from="1735102602130" duration="4430000" />
-      <workItem from="1735107199987" duration="351000" />
+      <workItem from="1735107199987" duration="503000" />
+      <workItem from="1735136788618" duration="13550000" />
     </task>
     <task id="LOCAL-00001" summary="feat(12/12)">
       <option name="closed" value="true" />
@@ -301,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734850069585</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(24 &amp; 25 A)">
+      <option name="closed" value="true" />
+      <created>1735107601562</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735107601562</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +340,8 @@
     <MESSAGE value="feat(16/12)" />
     <MESSAGE value="feat(18/12)" />
     <MESSAGE value="feat(22/12)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(22/12)" />
+    <MESSAGE value="feat(24 &amp; 25 A)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(24 &amp; 25 A)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
