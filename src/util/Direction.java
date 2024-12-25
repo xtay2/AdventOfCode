@@ -1,5 +1,6 @@
 package util;
 
+@SuppressWarnings("unused")
 public enum Direction {
     UP, DOWN, LEFT, RIGHT;
 
@@ -27,6 +28,16 @@ public enum Direction {
             case DOWN -> RIGHT;
             case LEFT -> DOWN;
             case RIGHT -> UP;
+        };
+    }
+
+    public static Direction fromChar(char c) {
+        return switch (c) {
+            case '^' -> Direction.UP;
+            case 'v' -> Direction.DOWN;
+            case '<' -> Direction.LEFT;
+            case '>' -> Direction.RIGHT;
+            default -> null;
         };
     }
 

@@ -17,8 +17,7 @@ public class Task_A extends Task {
 
     static IPoint parsePoint(String line) {
         var matcher = LINE_PATTERN.matcher(line);
-        if (!matcher.find()) throw new AssertionError("Invalid line: " + line);
-        return new IPoint(Integer.parseInt(matcher.group(1)), Integer.parseInt(matcher.group(2)));
+        return IPoint.fromStr(matcher.group(1), matcher.group(2));
     }
 
     @Override

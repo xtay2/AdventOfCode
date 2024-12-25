@@ -14,7 +14,7 @@ public class Task_A extends Task {
     protected Object exec(AdventOfCode aoc) {
         var tupleList = aoc.inputStr()
                 .map(line -> line.split(" +"))
-                .map(tup -> new IPoint(Integer.parseInt(tup[0]), Integer.parseInt(tup[1])))
+                .map(IPoint::fromStr)
                 .toList();
         var leftList = tupleList.stream().mapToInt(IPoint::x).sorted().toArray();
         var rightList = tupleList.stream().mapToInt(IPoint::y).sorted().toArray();

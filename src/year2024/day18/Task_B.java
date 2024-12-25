@@ -16,8 +16,7 @@ public class Task_B extends Task {
         var bounds = 71;
         var matrix = new CharMatrix(bounds, bounds, '.');
         var bytes = aoc.inputStr()
-                .map(line -> line.split(","))
-                .map(arr -> new IPoint(Integer.parseInt(arr[0]), Integer.parseInt(arr[1])))
+                .map(line -> IPoint.fromStr(line.split(",")))
                 .filter(matrix::isInBounds)
                 .toList();
         for (int byteIdx = 0; byteIdx < Integer.MAX_VALUE; byteIdx++) {
@@ -25,8 +24,8 @@ public class Task_B extends Task {
             var shortestPath = matrix.shortestPath(
                     new IPoint(0, 0),
                     new IPoint(bounds - 1, bounds - 1),
-                    (x, y, c) -> c != '#',
-                    (x, y, v) -> matrix.set(x, y, 'O')
+                    (_, _, c) -> c != '#',
+                    (x, y, _) -> matrix.set(x, y, 'O')
             );
             if (shortestPath == null)
                 return aoc.inputLst().get(byteIdx);

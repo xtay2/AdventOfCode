@@ -9,7 +9,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Scanner;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Task_B extends Task {
@@ -24,11 +24,11 @@ public class Task_B extends Task {
         var maxSeconds = 10_000;
         var bounds = new IPoint(101, 103);
         var movedRobots = aoc.inputStr()
-                .map(line -> {
-                    var matcher = pattern.matcher(line);
-                    matcher.find();
-                    var pos = new IPoint(Integer.parseInt(matcher.group(1)), Integer.parseInt(matcher.group(2)));
-                    var vel = new IPoint(Integer.parseInt(matcher.group(3)), Integer.parseInt(matcher.group(4)));
+                .map(pattern::matcher)
+                .filter(Matcher::find)
+                .map(matcher -> {
+                    var pos = IPoint.fromStr(matcher.group(1), matcher.group(2));
+                    var vel = IPoint.fromStr(matcher.group(3), matcher.group(4));
                     return new Robot(pos, vel);
                 }).toList();
         Files.createDirectories(Path.of("files/output/year2024/day14"));

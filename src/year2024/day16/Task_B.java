@@ -4,6 +4,8 @@ import aoc.AdventOfCode;
 import aoc.Task;
 import util.Direction;
 import util.IPoint;
+import util.Triple;
+import util.Tuple;
 
 import java.util.*;
 
@@ -16,26 +18,26 @@ public class Task_B extends Task {
     @Override
     protected Object exec(AdventOfCode aoc) throws Exception {
         var grid = aoc.inputCharMat();
-        var queue = new PriorityQueue<Triple<List<IPoint>, Direction, Integer>>(Comparator.comparing(Triple::third));
+        var queue = new PriorityQueue<Triple<List<IPoint>, Direction, Integer>>(Comparator.comparing(Triple::c));
         var start = grid.findFirst('S');
         queue.add(new Triple<>(List.of(start), Direction.RIGHT, 0));
         var end = grid.findFirst('E');
 
         var min = Integer.MAX_VALUE;
         var best = new HashSet<IPoint>();
-        var seen = new HashMap<Pair<IPoint, Direction>, Integer>();
+        var seen = new HashMap<Tuple<IPoint, Direction>, Integer>();
         while (!queue.isEmpty()) {
             var next = queue.poll();
-            var p = next.first();
-            var d = next.second();
-            var s = next.third();
+            var p = next.a();
+            var d = next.b();
+            var s = next.c();
 
             if (p.getLast().equals(end)) {
                 if (s <= min) min = s;
                 else return best.size();
                 best.addAll(p);
             }
-            var pToD = new Pair<>(p.getLast(), d);
+            var pToD = new Tuple<>(p.getLast(), d);
             if (seen.containsKey(pToD) && seen.get(pToD) < s)
                 continue;
             seen.put(pToD, s);
@@ -50,7 +52,4 @@ public class Task_B extends Task {
         return 0;
     }
 
-    record Triple<A, B, C>(A first, B second, C third) {}
-
-    record Pair<A, B>(A first, B second) {}
 }

@@ -41,16 +41,11 @@ public class Task_B extends Task {
     }
 
     private Guard findGuard() {
-        return matrix.map((x, y, v) -> {
-            var rot = switch (v) {
-                case '^' -> Direction.UP;
-                case 'v' -> Direction.DOWN;
-                case '<' -> Direction.LEFT;
-                case '>' -> Direction.RIGHT;
-                default -> null;
-            };
+        return matrix.stream()
+                .map(cvc -> {
+            var rot = Direction.fromChar(cvc.val());
             if (rot != null)
-                return new Guard(new IPoint(x, y), rot);
+                return new Guard(cvc.pos(), rot);
             return null;
         }).filter(Objects::nonNull).findFirst().orElseThrow();
     }

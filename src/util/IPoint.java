@@ -3,12 +3,16 @@ package util;
 import java.util.function.IntUnaryOperator;
 import java.util.stream.Stream;
 
+@SuppressWarnings("unused")
 public record IPoint(int x, int y) implements Point {
 
-    /** Parse the expression "x,y" into a point. */
-    public static IPoint fromCSV(String csv) {
-        var split = csv.split(",");
-        return new IPoint(Integer.parseInt(split[0]), Integer.parseInt(split[1]));
+    public static IPoint fromStr(String[] split) {
+        assert split.length == 2;
+        return fromStr(split[0], split[1]);
+    }
+
+    public static IPoint fromStr(String a, String b) {
+        return new IPoint(Integer.parseInt(a), Integer.parseInt(b));
     }
 
     public IPoint up() {

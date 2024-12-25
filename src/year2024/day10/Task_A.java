@@ -54,11 +54,6 @@ public class Task_A extends Task {
                 peaks.addAll(tp.reachablePeaks());
             return peaks;
         }
-
-        @Override
-        public String toString() {
-            return pos + ": " + score() + (val == 0 ? "(" + reachablePeaks() + ")" : "");
-        }
     }
 
 

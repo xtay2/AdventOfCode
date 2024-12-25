@@ -49,11 +49,6 @@ public class Task_B extends Task {
             return sum;
         }
 
-
-        @Override
-        public String toString() {
-            return pos + ": " + score();
-        }
     }
 
 

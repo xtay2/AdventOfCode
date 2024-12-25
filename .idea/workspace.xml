@@ -4,13 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="feat(24 &amp; 25 A)">
-      <change afterPath="$PROJECT_DIR$/src/util/Quadrupel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/Quintupel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/Triple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/Tuple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/year2024/day24/Task_B.java" afterDir="false" />
+    <list default="true" id="55b60942-7d49-4580-a2e4-ab3b304b70d9" name="Changes" comment="cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/CharMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/CharMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/IPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/IPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/LPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/LPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day01/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day01/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day01/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day01/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day06/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day06/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day06/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day06/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day07/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day07/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day07/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day07/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day08/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day08/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day08/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day08/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day10/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day10/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day10/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day10/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day13/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day13/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day14/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day14/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day14/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day14/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day16/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day16/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day16/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day16/Task_B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day18/Task_A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day18/Task_A.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/year2024/day18/Task_B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/year2024/day18/Task_B.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +80,9 @@
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="rtif8n1r" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -262,7 +281,8 @@
       <workItem from="1735031510633" duration="5878000" />
       <workItem from="1735102602130" duration="4430000" />
       <workItem from="1735107199987" duration="503000" />
-      <workItem from="1735136788618" duration="13550000" />
+      <workItem from="1735136788618" duration="13625000" />
+      <workItem from="1735150869276" duration="2996000" />
     </task>
     <task id="LOCAL-00001" summary="feat(12/12)">
       <option name="closed" value="true" />
@@ -312,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735107601562</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat(24/24 B)">
+      <option name="closed" value="true" />
+      <created>1735150641030</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735150641030</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +369,9 @@
     <MESSAGE value="feat(18/12)" />
     <MESSAGE value="feat(22/12)" />
     <MESSAGE value="feat(24 &amp; 25 A)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(24 &amp; 25 A)" />
+    <MESSAGE value="feat(24/24 B)" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

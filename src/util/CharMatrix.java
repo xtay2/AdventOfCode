@@ -280,17 +280,6 @@ public class CharMatrix implements Cloneable {
         return strBuilder.build();
     }
 
-    @Deprecated
-    public <U> Stream<U> map(CoordValCharFunction<U> function) {
-        var lst = new ArrayList<U>();
-        for (int y = 0; y < height(); y++) {
-            for (int x = 0; x < width(); x++) {
-                lst.add(function.apply(at(x, y)));
-            }
-        }
-        return lst.stream();
-    }
-
     public IntMatrix mapToInt(CoordValCharToIntFunction function) {
         var mat = new IntMatrix(width(), height());
         for (int y = 0; y < height(); y++) {

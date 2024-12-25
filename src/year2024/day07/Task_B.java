@@ -24,16 +24,12 @@ public class Task_B extends Task {
                             Arrays.stream(split[1].split("\\s")).map(Long::parseLong).collect(Collectors.toList())
                     );
                 })
-                .filter(this::couldBeTrue)
+                .filter(Eq::couldBeTrue)
                 .mapToLong(Eq::res)
                 .sum();
     }
 
-    boolean couldBeTrue(Eq eq) {
-        return results(eq.operands()).contains(eq.res);
-    }
-
-    List<Long> results(List<Long> operands) {
+    static List<Long> results(List<Long> operands) {
         if (operands.size() == 1)
             return operands;
         var res = new ArrayList<Long>();
@@ -46,5 +42,9 @@ public class Task_B extends Task {
         return res;
     }
 
-    record Eq(long res, List<Long> operands) {}
+    record Eq(long res, List<Long> operands) {
+        boolean couldBeTrue() {
+            return results(operands()).contains(res);
+        }
+    }
 }

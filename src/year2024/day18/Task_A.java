@@ -18,14 +18,14 @@ public class Task_A extends Task {
         var matrix = new CharMatrix(bounds, bounds, '.');
         aoc.inputStr()
                 .limit(bytes)
-                .map(IPoint::fromCSV)
+                .map(line -> IPoint.fromStr(line.split(",")))
                 .filter(matrix::isInBounds)
                 .forEach(pos -> matrix.set(pos, '#'));
         var shortestPath = matrix.shortestPath(
                 0, 0,
                 bounds - 1, bounds - 1,
-                (x, y, c) -> c != '#',
-                (x, y, v) -> matrix.set(x, y, 'O')
+                (_, _, c) -> c != '#',
+                (x, y, _) -> matrix.set(x, y, 'O')
         );
         System.out.println(shortestPath);
         System.out.println(matrix);
