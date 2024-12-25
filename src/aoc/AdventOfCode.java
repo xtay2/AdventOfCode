@@ -122,8 +122,8 @@ public class AdventOfCode {
     private void updateInput() {
         if (year < 2015 || year > Year.now().getValue())
             throw new IllegalArgumentException("Please choose a valid year. (2015-" + Year.now().getValue() + ") Was: " + year);
-        if (day < 1 || day > 24)
-            throw new IllegalArgumentException("Please choose a valid day. (1-24) Was: " + day);
+        if (day < 1 || day > 25)
+            throw new IllegalArgumentException("Please choose a valid day. (1-25) Was: " + day);
         try {
             if (Files.exists(inputFile()) && !Files.readString(inputFile()).equals("Puzzle inputs differ by user. Please log in to get your puzzle input.\n"))
                 return;
